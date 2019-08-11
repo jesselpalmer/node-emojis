@@ -85,27 +85,27 @@ Sample usage:
     </tr>
     <tr>
       <td>🐈 Animal</td>
-      <td><a href="https://github.com/jesselpalmer/node-emojify/blob/master/lib/emojis/animal-emojis.js">animal-emojis.js</a></td>
+      <td><a href="https://github.com/jesselpalmer/node-emojis/blob/master/lib/emojis/animal-emojis.js">animal-emojis.js</a></td>
     </tr>
     <tr>
       <td>🍔 Food</td>
-      <td><a href="https://github.com/jesselpalmer/node-emojify/blob/master/lib/emojis/food-emojis.js">food-emojis.js</a></td>
+      <td><a href="https://github.com/jesselpalmer/node-emojis/blob/master/lib/emojis/food-emojis.js">food-emojis.js</a></td>
     </tr>
     <tr>
       <td>🔥 Nature</td>
-      <td><a href="https://github.com/jesselpalmer/node-emojify/blob/master/lib/emojis/nature-emojis.js">nature-emojis.js</a></td>
+      <td><a href="https://github.com/jesselpalmer/node-emojis/blob/master/lib/emojis/nature-emojis.js">nature-emojis.js</a></td>
     </tr>
     <tr>
       <td>🙃 People</td>
-      <td><a href="https://github.com/jesselpalmer/node-emojify/blob/master/lib/emojis/people-emojis.js">people-emojis.js</a></td>
+      <td><a href="https://github.com/jesselpalmer/node-emojis/blob/master/lib/emojis/people-emojis.js">people-emojis.js</a></td>
     </tr>
     <tr>
       <td>🗻 Travel</td>
-      <td><a href="https://github.com/jesselpalmer/node-emojify/blob/master/lib/emojis/travel-emojis.js">travel-emojis.js</a></td>
+      <td><a href="https://github.com/jesselpalmer/node-emojis/blob/master/lib/emojis/travel-emojis.js">travel-emojis.js</a></td>
     </tr>
    </table>
   
-  If there is an emoji that you need and is not available, please file an [issue](https://github.com/jesselpalmer/node-emojify/issues) or create a [pull request](https://github.com/jesselpalmer/node-emojify/pulls).
+  If there is an emoji that you need and is not available, please file an [issue](https://github.com/jesselpalmer/node-emojis/issues) or create a [pull request](https://github.com/jesselpalmer/node-emojis/pulls).
   
 ## Tests
 
@@ -115,6 +115,6 @@ Sample usage:
 
 ## Contributing
 
-Pull requests are welcome! It's super easy to add new emojis! Just go to [https://github.com/jesselpalmer/node-emojify/tree/master/lib/emojis](https://github.com/jesselpalmer/node-emojify/tree/master/lib/emojis) and if you find emojis that are missing from [Emojipedia](https://emojipedia.org/) just create a PR adding the missing emoji.
+Pull requests are welcome! It's super easy to add new emojis! Just go to [https://github.com/jesselpalmer/node-emojis/tree/master/lib/emojis](https://github.com/jesselpalmer/node-emojis/tree/master/lib/emojis) and if you find emojis that are missing from [Emojipedia](https://emojipedia.org/) just create a PR adding the missing emoji.
 
 Please make sure that any new or changed functionality need to have unit tests accompanied with the PR. Make sure that you lint (`npm run lint`) and test your code (`npm test`).

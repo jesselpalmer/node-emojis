@@ -9,7 +9,7 @@
     "lint:fix": "standard --fix",
     "test": "npm run cover"
   },
-  "repository": "git+https://github.com/jesselpalmer/node-emojify.git",
+  "repository": "git+https://github.com/jesselpalmer/node-emojis.git",
   "engines": {
     "node": ">=4.2.4"
   },
