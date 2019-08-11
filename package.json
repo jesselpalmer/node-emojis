@@ -1,0 +1,37 @@
+{
+  "name": "node-emojis",
+  "version": "0.0.1",
+  "description": "Emojis that you can use in your application 😊",
+  "main": "lib/index.js",
+  "scripts": {
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "npm run cover"
+  },
+  "repository": "git+https://github.com/jesselpalmer/node-emojify.git",
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "keywords": [
+    "emojis"
+  ],
+  "author": "Jesse Palmer <jesselpalmer@gmail.com> (http://jesselpalmer.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesselpalmer/node-emojis/issues"
+  },
+  "homepage": "https://github.com/jesselpalmer/node-emojis#readme",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "coveralls": "3.0.6",
+    "istanbul": "0.4.5",
+    "mocha": "6.2.0",
+    "pre-commit": "1.2.2",
+    "standard": "13.1.0"
+  }
+}
