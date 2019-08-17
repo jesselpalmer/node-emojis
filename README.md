@@ -1,8 +1,10 @@
 [![npm](https://img.shields.io/npm/dw/node-emojis.svg)](https://www.npmjs.com/package/node-emojis)
+[![Maintainability](https://img.shields.io/codeclimate/maintainability/jesselpalmer/node-emojis)](https://codeclimate.com/github/jesselpalmer/node-emojis/maintainability)
 [![Build Status](https://travis-ci.org/jesselpalmer/node-emojis.svg?branch=master)](https://travis-ci.org/jesselpalmer/node-emojis)
 [![Coverage Status](https://coveralls.io/repos/github/jesselpalmer/node-emojis/badge.svg?branch=master)](https://coveralls.io/github/jesselpalmer/node-emojis?branch=master)
 [![dependencies Status](https://david-dm.org/jesselpalmer/node-emojis/status.svg)](https://david-dm.org/jesselpalmer/node-emojis)
 [![devDependencies Status](https://david-dm.org/jesselpalmer/node-emojis/dev-status.svg)](https://david-dm.org/jesselpalmer/node-emojis?type=dev)
+[![Known Vulnerabilities](https://snyk.io/test/github/jesselpalmer/node-emojis/badge.svg)](https://snyk.io/test/github/jesselpalmer/node-emojis)
 
 # node-emojis
 
