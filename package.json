@@ -1,6 +1,6 @@
 {
   "name": "node-emojis",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Emojis that you can use in your application 😊",
   "main": "lib/index.js",
   "scripts": {
