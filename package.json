@@ -5,8 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
-    "lint": "standard",
-    "lint:fix": "standard --fix",
+    "lint": "standard ./lib/*.js ./test/*.js",
+    "lint:fix": "standard ./lib/*.js ./test/*.js --fix",
     "test": "npm run cover"
   },
   "repository": "git+https://github.com/jesselpalmer/node-emojis.git",
