@@ -1,11 +1,7 @@
 [![npm](https://img.shields.io/npm/dw/node-emojis.svg)](https://www.npmjs.com/package/node-emojis)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/node-emojis?color=%234DC92A&label=size)](https://bundlephobia.com/result?p=node-emojis)
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/jesselpalmer/node-emojis?label=code%20quality)](https://codeclimate.com/github/jesselpalmer/node-emojis/maintainability)
 [![Build Status](https://travis-ci.org/jesselpalmer/node-emojis.svg?branch=master)](https://travis-ci.org/jesselpalmer/node-emojis)
 [![Coverage Status](https://coveralls.io/repos/github/jesselpalmer/node-emojis/badge.svg?branch=master)](https://coveralls.io/github/jesselpalmer/node-emojis?branch=master)
-[![dependencies Status](https://david-dm.org/jesselpalmer/node-emojis/status.svg)](https://david-dm.org/jesselpalmer/node-emojis)
-[![devDependencies Status](https://david-dm.org/jesselpalmer/node-emojis/dev-status.svg)](https://david-dm.org/jesselpalmer/node-emojis?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/jesselpalmer/node-emojis/badge.svg)](https://snyk.io/test/github/jesselpalmer/node-emojis)
 
 # node-emojis
 
@@ -19,7 +15,7 @@ found at [Emojipedia](https://emojipedia.org/).
 ## Support Status
 
 Below is a table of the emojis that are supported by version. There may be some emojis that are
-supported in the different verisons, but there hasn't been a concerted effort to add all emojis from
+supported in the different versions, but there hasn't been a concerted effort to add all emojis from
 that version.
 
 <table>
@@ -120,4 +116,4 @@ Sample usage:
 
 Pull requests are welcome! It's super easy to add new emojis! Just go to [https://github.com/jesselpalmer/node-emojis/tree/master/lib/emojis](https://github.com/jesselpalmer/node-emojis/tree/master/lib/emojis) and if you find emojis that are missing from [Emojipedia](https://emojipedia.org/) just create a PR adding the missing emoji.
 
-Please make sure that any new or changed functionality need to have unit tests accompanied with the PR. Make sure that you lint (`npm run lint`) and test your code (`npm test`).
+Please ensure that any new or changed functionality needs unit tests accompanied with the PR. Make sure that you lint (`npm run lint`) and test your code (`npm test`).
