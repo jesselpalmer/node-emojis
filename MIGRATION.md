@@ -80,13 +80,13 @@ const { filterByCategory, filterByVersion } = require('node-emojis/filters')
 const animals = filterByCategory('animals')
 const modernEmojis = filterByVersion('10.0', 'min')
 
-// Validators
-const { isValidEmoji, isValidEmojiName } = require('node-emojis/validators')
+// Validators (part of main export)
+const { isValidEmoji, isValidEmojiName } = require('node-emojis')
 isValidEmoji('🔥') // true
 isValidEmojiName('fire') // true
 
-// Reverse mapping utilities
-const { getNameFromEmoji } = require('node-emojis/reverse-mapping')
+// Reverse mapping utilities (part of main export)
+const { getNameFromEmoji } = require('node-emojis')
 getNameFromEmoji('🔥') // 'fire'
 ```
 
