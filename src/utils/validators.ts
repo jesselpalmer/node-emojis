@@ -47,7 +47,7 @@ export function isValidSkinTone(tone: string): tone is SkinTone | SkinToneAlias 
  * Validate and sanitize emoji name
  */
 export function sanitizeEmojiName(name: string): string {
-  return name.toLowerCase().replace(/[^a-z0-9_]/g, '_')
+  return name.replace(/[^a-zA-Z0-9_-]/g, '_')
 }
 
 /**

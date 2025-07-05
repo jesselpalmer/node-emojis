@@ -3,7 +3,9 @@ import {
   isValidEmoji,
   isValidEmojiName,
   hasVariationSelector,
-  stripVariationSelectors
+  stripVariationSelectors,
+  isValidSkinTone,
+  sanitizeEmojiName
 } from '../lib/utils/validators'
 
 describe('validators utility', () => {
@@ -116,6 +118,77 @@ describe('validators utility', () => {
 
     it('should handle empty strings', () => {
       expect(stripVariationSelectors('')).to.equal('')
+    })
+  })
+
+  describe('isValidSkinTone function', () => {
+    it('should validate standard skin tone identifiers', () => {
+      expect(isValidSkinTone('light')).to.be.true
+      expect(isValidSkinTone('medium-light')).to.be.true
+      expect(isValidSkinTone('medium')).to.be.true
+      expect(isValidSkinTone('medium-dark')).to.be.true
+      expect(isValidSkinTone('dark')).to.be.true
+    })
+
+    it('should validate numeric skin tone aliases', () => {
+      expect(isValidSkinTone('1')).to.be.true
+      expect(isValidSkinTone('2')).to.be.true
+      expect(isValidSkinTone('3')).to.be.true
+      expect(isValidSkinTone('4')).to.be.true
+      expect(isValidSkinTone('5')).to.be.true
+    })
+
+    it('should reject invalid skin tone identifiers', () => {
+      expect(isValidSkinTone('0')).to.be.false
+      expect(isValidSkinTone('6')).to.be.false
+      expect(isValidSkinTone('light-medium')).to.be.false
+      expect(isValidSkinTone('very-dark')).to.be.false
+      expect(isValidSkinTone('invalid')).to.be.false
+      expect(isValidSkinTone('')).to.be.false
+    })
+
+    it('should be case-sensitive', () => {
+      expect(isValidSkinTone('Light')).to.be.false
+      expect(isValidSkinTone('DARK')).to.be.false
+    })
+  })
+
+  describe('sanitizeEmojiName function', () => {
+    it('should replace spaces with underscores', () => {
+      expect(sanitizeEmojiName('smiling face')).to.equal('smiling_face')
+      expect(sanitizeEmojiName('face with tears')).to.equal('face_with_tears')
+    })
+
+    it('should replace special characters with underscores', () => {
+      expect(sanitizeEmojiName('fire!')).to.equal('fire_')
+      expect(sanitizeEmojiName('cat@dog')).to.equal('cat_dog')
+      expect(sanitizeEmojiName('pizza#1')).to.equal('pizza_1')
+    })
+
+    it('should handle multiple consecutive invalid characters', () => {
+      expect(sanitizeEmojiName('hello   world')).to.equal('hello___world')
+      expect(sanitizeEmojiName('test!!!name')).to.equal('test___name')
+    })
+
+    it('should handle leading and trailing invalid characters', () => {
+      expect(sanitizeEmojiName(' fire ')).to.equal('_fire_')
+      expect(sanitizeEmojiName('!emoji!')).to.equal('_emoji_')
+      expect(sanitizeEmojiName('###test###')).to.equal('___test___')
+    })
+
+    it('should preserve valid characters', () => {
+      expect(sanitizeEmojiName('valid_name_123')).to.equal('valid_name_123')
+      expect(sanitizeEmojiName('camelCase')).to.equal('camelCase')
+      expect(sanitizeEmojiName('kebab-case')).to.equal('kebab-case')
+    })
+
+    it('should handle empty strings', () => {
+      expect(sanitizeEmojiName('')).to.equal('')
+    })
+
+    it('should handle strings with only invalid characters', () => {
+      expect(sanitizeEmojiName('!!!')).to.equal('___')
+      expect(sanitizeEmojiName('   ')).to.equal('___')
     })
   })
 })

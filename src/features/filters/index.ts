@@ -31,7 +31,7 @@ export function filterByCategory(category: keyof typeof categories): EmojiInfo[]
 /**
  * Filter emojis by Unicode version
  */
-export function filterByVersion(version: string, comparison: 'exact' | 'min' | 'max' = 'exact'): EmojiInfo[] {
+export function filterByVersion(version: string, comparison: 'exact' | 'min' | 'max' = 'min'): EmojiInfo[] {
   const results: EmojiInfo[] = []
   
   Object.entries(emojis).forEach(([name, emoji]) => {
