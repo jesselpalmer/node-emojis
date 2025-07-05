@@ -168,6 +168,17 @@ import { getAliases } from 'node-emojis/aliases'
 | Aliases only | ~6KB |
 | Direct data import | ~60KB |
 
+## 📚 Documentation
+
+For comprehensive documentation, examples, and guides:
+
+- **[Complete Documentation](./docs/)** - All guides and references
+- **[Getting Started](./docs/wiki/Getting-Started.md)** - Installation and basic usage
+- **[API Reference](./docs/wiki/API-Reference.md)** - Complete API documentation
+- **[FAQ](./docs/wiki/FAQ.md)** - Frequently asked questions
+- **[Migration Guide](./docs/wiki/Migration-Guide.md)** - Upgrading from v0.x
+- **[GitHub Wiki](https://github.com/jesselpalmer/node-emojis/wiki)** - Online documentation
+
 ## 🎯 Examples
 
 See the [examples](./examples) directory for more usage examples:
