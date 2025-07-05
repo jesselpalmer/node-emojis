@@ -517,3 +517,7 @@ type SkinTone = 'light' | 'medium-light' | 'medium' | 'medium-dark' | 'dark'
 ---
 
 Need more details? Check our [examples](./Recipes-and-Examples) or [open an issue](https://github.com/jesselpalmer/node-emojis/issues)!
+
+---
+
+Last updated: July 2025 | Version: 1.0.0

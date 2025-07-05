@@ -191,8 +191,8 @@ Now that you have node-emojis installed and working:
 
 1. 📖 Check the [API Reference](./API-Reference) for detailed documentation
 2. 🍳 Explore [Recipes & Examples](./Recipes-and-Examples) for common patterns
-3. 🔍 Learn about [Search Functionality](./API-Reference#search)
-4. 🎨 Understand [Skin Tone Support](./API-Reference#skin-tones)
+3. 🔍 Learn about [Search Functionality](./API-Reference#search-module)
+4. 🎨 Understand [Skin Tone Support](./API-Reference#skin-tones-module)
 5. 📦 Optimize with [Tree Shaking](./Advanced-Usage#tree-shaking)
 
 ## Troubleshooting
@@ -224,3 +224,7 @@ If TypeScript can't find types:
 ---
 
 Need help? [Open an issue](https://github.com/jesselpalmer/node-emojis/issues) on GitHub!
+
+---
+
+Last updated: July 2025 | Version: 1.0.0
