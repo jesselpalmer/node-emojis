@@ -6,6 +6,26 @@ const validEmojisSet = new Set(Object.values(emojis))
 
 /**
  * Check if a string is a valid emoji character
+ * 
+ * This function uses a two-step validation approach:
+ * 1. First checks against the known emoji database for exact matches (O(1) lookup)
+ * 2. Falls back to regex validation for emojis that might not be in our database
+ * 
+ * The regex pattern covers Unicode ranges for:
+ * - Emoticons (U+1F600-U+1F64F)
+ * - Miscellaneous Symbols and Pictographs (U+1F300-U+1F5FF)
+ * - Transport and Map Symbols (U+1F680-U+1F6FF)
+ * - Supplemental Symbols and Pictographs (U+1F900-U+1F9FF, U+1FA00-U+1FAFF)
+ * - Flags (U+1F1E6-U+1F1FF)
+ * - Skin tone modifiers (U+1F3FB-U+1F3FF)
+ * - Zero-width joiner (U+200D) and variation selector (U+FE0F)
+ * 
+ * Limitations:
+ * - May not recognize very new emojis not yet in the database
+ * - Complex emoji sequences with multiple components might not be fully validated
+ * 
+ * @param str - The string to validate
+ * @returns true if the string is a valid emoji, false otherwise
  */
 export function isValidEmoji(str: string): boolean {
   if (!str) return false
