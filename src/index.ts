@@ -2,12 +2,29 @@
 import emojiData from './data/emojis.json'
 import metadataData from './data/metadata.json'
 import categoriesData from './data/categories.json'
+import aliasData from './data/aliases.json'
+import skinToneData from './data/skin-tones.json'
 
 // Features - re-export everything
 export * from './features/search'
 export * from './features/skin-tones'
 export * from './features/aliases'
 export * from './features/filters'
+
+// Import functions for backward compatibility
+import { search as searchFunction, getByCategory as getByCategoryFunction } from './features/search'
+import { 
+  applySkinTone as applySkinToneFunction,
+  supportsSkinTone as supportsSkinToneFunction,
+  getAllSkinToneVariations as getAllSkinToneVariationsFunction,
+  removeSkinTone as removeSkinToneFunction
+} from './features/skin-tones'
+import {
+  getAliases as getAliasesFunction,
+  getPrimaryName as getPrimaryNameFunction,
+  isSameEmoji as isSameEmojiFunction,
+  getAllNames as getAllNamesFunction
+} from './features/aliases'
 
 // Utils
 export * from './utils/reverse-mapping'
@@ -93,9 +110,8 @@ Object.defineProperty(emojis, 'reverseMapping', {
 // Add backward compatibility methods
 Object.defineProperty(emojis, 'searchByKeyword', {
   value: (keyword: string) => {
-    const { search } = require('./features/search')
     // Transform results for backward compatibility
-    return search(keyword).map((result: any) => ({
+    return searchFunction(keyword).map((result: any) => ({
       name: result.name,
       emoji: result.emoji,
       metadata: {
@@ -110,9 +126,8 @@ Object.defineProperty(emojis, 'searchByKeyword', {
 
 Object.defineProperty(emojis, 'getByCategory', {
   value: (category: string) => {
-    const { getByCategory } = require('./features/search')
     // Transform results for backward compatibility
-    return getByCategory(category).map((result: any) => ({
+    return getByCategoryFunction(category).map((result: any) => ({
       name: result.name,
       emoji: result.emoji,
       metadata: {
@@ -133,70 +148,62 @@ Object.defineProperty(emojis, 'getAllNames', {
 // Skin tone methods
 Object.defineProperty(emojis, 'applySkinTone', {
   value: (emoji: string, tone: any) => {
-    const { applySkinTone } = require('./features/skin-tones')
-    return applySkinTone(emoji, tone)
+    return applySkinToneFunction(emoji, tone)
   },
   enumerable: false
 })
 
 Object.defineProperty(emojis, 'supportsSkinTone', {
   value: (nameOrEmoji: string) => {
-    const { supportsSkinTone } = require('./features/skin-tones')
-    return supportsSkinTone(nameOrEmoji)
+    return supportsSkinToneFunction(nameOrEmoji)
   },
   enumerable: false
 })
 
 Object.defineProperty(emojis, 'getAllSkinToneVariations', {
   value: (emoji: string) => {
-    const { getAllSkinToneVariations } = require('./features/skin-tones')
-    return getAllSkinToneVariations(emoji)
+    return getAllSkinToneVariationsFunction(emoji)
   },
   enumerable: false
 })
 
 Object.defineProperty(emojis, 'removeSkinTone', {
   value: (emoji: string) => {
-    const { removeSkinTone } = require('./features/skin-tones')
-    return removeSkinTone(emoji)
+    return removeSkinToneFunction(emoji)
   },
   enumerable: false
 })
 
 // Alias methods
 Object.defineProperty(emojis, 'aliases', {
-  get: () => require('./data/aliases.json'),
+  get: () => aliasData,
   enumerable: false
 })
 
 Object.defineProperty(emojis, 'getAliases', {
   value: (name: string) => {
-    const { getAliases } = require('./features/aliases')
-    return getAliases(name)
+    return getAliasesFunction(name)
   },
   enumerable: false
 })
 
 Object.defineProperty(emojis, 'getPrimaryName', {
   value: (name: string) => {
-    const { getPrimaryName } = require('./features/aliases')
-    return getPrimaryName(name)
+    return getPrimaryNameFunction(name)
   },
   enumerable: false
 })
 
 Object.defineProperty(emojis, 'isSameEmoji', {
   value: (name1: string, name2: string) => {
-    const { isSameEmoji } = require('./features/aliases')
-    return isSameEmoji(name1, name2)
+    return isSameEmojiFunction(name1, name2)
   },
   enumerable: false
 })
 
 Object.defineProperty(emojis, 'getAllNamesForEmoji', {
   value: (name: string) => {
-    const { getAllNames } = require('./features/aliases')
-    return getAllNames(name)
+    return getAllNamesFunction(name)
   },
   enumerable: false
 })
@@ -204,7 +211,7 @@ Object.defineProperty(emojis, 'getAllNamesForEmoji', {
 // Add skin tone data for backward compatibility
 Object.defineProperty(emojis, 'skinTones', {
   get: () => {
-    const modifiers = require('./data/skin-tones.json').modifiers
+    const modifiers = skinToneData.modifiers
     return {
       // Numeric aliases
       '1': modifiers.light,
@@ -225,13 +232,13 @@ Object.defineProperty(emojis, 'skinTones', {
 
 // Add skin tone constants - camelCase for backward compatibility
 Object.defineProperty(emojis, 'skinToneModifiers', {
-  get: () => require('./data/skin-tones.json').modifiers,
+  get: () => skinToneData.modifiers,
   enumerable: false
 })
 
 // Add skin tone constants - original uppercase
 Object.defineProperty(emojis, 'SKIN_TONE_MODIFIERS', {
-  get: () => require('./data/skin-tones.json').modifiers,
+  get: () => skinToneData.modifiers,
   enumerable: false
 })
 
@@ -247,7 +254,6 @@ Object.defineProperty(emojis, 'SKIN_TONES', {
 })
 
 // Support alias access
-const aliasData = require('./data/aliases.json')
 Object.entries(aliasData).forEach(([primary, aliases]) => {
   (aliases as string[]).forEach(alias => {
     if (!(alias in emojis)) {
