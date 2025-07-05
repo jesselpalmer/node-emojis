@@ -1,119 +1,183 @@
-[![npm](https://img.shields.io/npm/dw/node-emojis.svg)](https://www.npmjs.com/package/node-emojis)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/node-emojis?color=%234DC92A&label=size)](https://bundlephobia.com/result?p=node-emojis)
-[![Build Status](https://travis-ci.org/jesselpalmer/node-emojis.svg?branch=master)](https://travis-ci.org/jesselpalmer/node-emojis)
-[![Coverage Status](https://coveralls.io/repos/github/jesselpalmer/node-emojis/badge.svg?branch=master)](https://coveralls.io/github/jesselpalmer/node-emojis?branch=master)
+[![npm version](https://img.shields.io/npm/v/node-emojis.svg)](https://www.npmjs.com/package/node-emojis)
+[![npm downloads](https://img.shields.io/npm/dw/node-emojis.svg)](https://www.npmjs.com/package/node-emojis)
+[![CI](https://github.com/jesselpalmer/node-emojis/workflows/CI/badge.svg)](https://github.com/jesselpalmer/node-emojis/actions)
+[![bundle size](https://img.shields.io/bundlephobia/min/node-emojis)](https://bundlephobia.com/package/node-emojis)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![license](https://img.shields.io/npm/l/node-emojis.svg)](https://github.com/jesselpalmer/node-emojis/blob/master/LICENSE)
 
-# node-emojis
+# node-emojis 🎉
 
-Emojis that you can use in your application 😊
+A modern, tree-shakeable emoji library for Node.js and browsers with TypeScript support.
 
-## Goal
+## ✨ Features
 
-The goal of the project is to support all of the emojis that can be
-found at [Emojipedia](https://emojipedia.org/).
+- 🌳 **Tree-shakeable** - Import only what you need
+- 📦 **360+ emojis** from Unicode 1.0 to 15.0
+- 🔍 **Smart search** with keyword matching
+- 🎨 **Skin tone support** for 150+ human emojis
+- 🔄 **Emoji aliases** (thumbsup/+1/thumbs_up)
+- 📝 **TypeScript** support with full type definitions
+- 🚀 **Zero dependencies**
+- ⚡ **Optimized** for performance
 
-## Support Status
+## 📦 Installation
 
-Below is a table of the emojis that are supported by version. There may be some emojis that are
-supported in the different versions, but there hasn't been a concerted effort to add all emojis from
-that version.
+```bash
+npm install node-emojis
+```
 
-<table>
-  <tr>
-    <th>Verison</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td><a href=https://emojipedia.org/emoji-1.0/>Emoji 1.0</a></td>
-    <td>In development 🙂</td> 
-  </tr>
-  <tr>
-    <td><a href=https://emojipedia.org/emoji-2.0/>Emoji 2.0</a></td>
-    <td>Not supported yet 🙁</td>  
-  </tr>
-  <tr>
-     <td><a href=https://emojipedia.org/emoji-3.0/>Emoji 3.0</a></td>
-    <td>Not supported yet 🙁</td>  
-  </tr>
-  <tr>
-     <td><a href=https://emojipedia.org/emoji-4.0/>Emoji 4.0</a></td>
-    <td>Not supported yet 🙁</td>  
-  </tr>
-  <tr>
-    <td><a href=https://emojipedia.org/emoji-5.0/>Emoji 5.0</a></td>
-    <td>Not supported yet 🙁</td>  
-  </tr>
-  <tr>
-    <td><a href=https://emojipedia.org/emoji-11.0/>Emoji 11.0</a></td>
-    <td>Not supported yet 🙁</td>  
-  </tr>
-  <tr>
-     <td><a href=https://emojipedia.org/emoji-12.0/>Emoji 12.0</a></td>
-    <td>Not supported yet 🙁</td>  
-  </tr>
-</table>
+## 🚀 Quick Start
 
-## Installation
+```javascript
+// Import everything (backward compatible)
+const emojis = require('node-emojis')
+console.log(emojis.fire) // 🔥
 
-  ```bash
-  npm install node-emojis
-  ```
+// Import only what you need (recommended)
+const { search } = require('node-emojis/search')
+const { applySkinTone } = require('node-emojis/skin-tones')
+```
 
-## Usage
+### ES Modules
 
-Just import the emojis into your app. It is an object with the emoji name as the key and the actual emoji as the value.
+```javascript
+import emojis from 'node-emojis'
+import { search } from 'node-emojis/search'
+import { applySkinTone } from 'node-emojis/skin-tones'
+```
 
-Sample usage:
+## 📖 API
 
-  ```js
-  const emojis = require('node-emojis')
+### Basic Usage
 
-  console.log(emojis.smile)
-  ```
+```javascript
+const emojis = require('node-emojis')
 
-  Output should be `😄`
-  
-### Supported emojis
-  
-  Supported emojis can be found in different files using the table below:
-  
-  <table>
-    <tr>
-      <th>Category</th>
-      <th>Filename</th>
-    </tr>
-    <tr>
-      <td>🐈 Animal</td>
-      <td><a href="https://github.com/jesselpalmer/node-emojis/blob/master/lib/emojis/animal-emojis.js">animal-emojis.js</a></td>
-    </tr>
-    <tr>
-      <td>🍔 Food</td>
-      <td><a href="https://github.com/jesselpalmer/node-emojis/blob/master/lib/emojis/food-emojis.js">food-emojis.js</a></td>
-    </tr>
-    <tr>
-      <td>🔥 Nature</td>
-      <td><a href="https://github.com/jesselpalmer/node-emojis/blob/master/lib/emojis/nature-emojis.js">nature-emojis.js</a></td>
-    </tr>
-    <tr>
-      <td>🙃 People</td>
-      <td><a href="https://github.com/jesselpalmer/node-emojis/blob/master/lib/emojis/people-emojis.js">people-emojis.js</a></td>
-    </tr>
-    <tr>
-      <td>🗻 Travel</td>
-      <td><a href="https://github.com/jesselpalmer/node-emojis/blob/master/lib/emojis/travel-emojis.js">travel-emojis.js</a></td>
-    </tr>
-   </table>
-  
-  If there is an emoji that you need and is not available, please file an [issue](https://github.com/jesselpalmer/node-emojis/issues) or create a [pull request](https://github.com/jesselpalmer/node-emojis/pulls).
-  
-## Tests
+// Access emojis directly
+emojis.fire        // 🔥
+emojis.pizza       // 🍕
+emojis.unicorn     // 🦄
+emojis['+1']       // 👍 (alias support)
+```
 
-  ```bash
-  npm test
-  ```
+### 🔍 Search
 
-## Contributing
+```javascript
+const { search, getByCategory } = require('node-emojis/search')
 
-Pull requests are welcome! It's super easy to add new emojis! Just go to [https://github.com/jesselpalmer/node-emojis/tree/master/lib/emojis](https://github.com/jesselpalmer/node-emojis/tree/master/lib/emojis) and if you find emojis that are missing from [Emojipedia](https://emojipedia.org/) just create a PR adding the missing emoji.
+// Search by keyword
+const results = search('happy')
+// Returns: [{ name: 'smile', emoji: '😊', keywords: [...], score: 0.8 }, ...]
 
-Please ensure that any new or changed functionality needs unit tests accompanied with the PR. Make sure that you lint (`npm run lint`) and test your code (`npm test`).
+// Get all emojis in a category
+const animals = getByCategory('animals')
+// Returns: [{ name: 'dog', emoji: '🐕', ... }, ...]
+```
+
+### 🎨 Skin Tones
+
+```javascript
+const { applySkinTone, supportsSkinTone, getAllSkinToneVariations } = require('node-emojis/skin-tones')
+
+// Apply skin tone
+applySkinTone('👋', 'medium')     // 👋🏽
+applySkinTone('👋', '3')          // 👋🏽 (Fitzpatrick scale)
+
+// Check if emoji supports skin tones
+supportsSkinTone('wave')          // true
+supportsSkinTone('fire')          // false
+
+// Get all variations
+getAllSkinToneVariations('👋')
+// { light: '👋🏻', 'medium-light': '👋🏼', medium: '👋🏽', ... }
+```
+
+### 🔄 Aliases
+
+```javascript
+const { getAliases, getPrimaryName, isSameEmoji } = require('node-emojis/aliases')
+
+// Get aliases
+getAliases('fire')                // ['flame', 'hot', 'lit', 'snapstreak']
+
+// Get primary name
+getPrimaryName('+1')              // 'thumbs_up'
+
+// Check if two names refer to the same emoji
+isSameEmoji('thumbsup', '+1')     // true
+```
+
+### 🎯 Filters
+
+```javascript
+const { filterByCategory, filterByVersion, filterByKeyword } = require('node-emojis/filters')
+
+// Filter by category
+const foods = filterByCategory('food')
+
+// Filter by Unicode version
+const modernEmojis = filterByVersion('10.0', 'min')  // Unicode 10.0+
+const oldEmojis = filterByVersion('1.0', 'exact')    // Only Unicode 1.0
+
+// Filter by keyword
+const hearts = filterByKeyword('heart')
+```
+
+### 🔧 Utilities
+
+```javascript
+const { getNameFromEmoji, isValidEmoji, isValidEmojiName } = require('node-emojis')
+
+// Reverse lookup
+getNameFromEmoji('🔥')            // 'fire'
+
+// Validation
+isValidEmoji('🔥')                // true
+isValidEmojiName('fire')          // true
+```
+
+## 🌲 Tree Shaking
+
+Import only what you need to minimize bundle size:
+
+```javascript
+// ❌ Imports entire library
+import emojis from 'node-emojis'
+
+// ✅ Imports only search functionality
+import { search } from 'node-emojis/search'
+
+// ✅ Import multiple features
+import { search } from 'node-emojis/search'
+import { applySkinTone } from 'node-emojis/skin-tones'
+import { getAliases } from 'node-emojis/aliases'
+```
+
+## 📊 Bundle Size Comparison
+
+| Import Style | Size (minified) |
+|-------------|-----------------|
+| Full library | ~85KB |
+| Search only | ~15KB |
+| Skin tones only | ~8KB |
+| Aliases only | ~6KB |
+| Direct data import | ~60KB |
+
+## 🎯 Examples
+
+See the [examples](./examples) directory for more usage examples:
+
+- [Basic usage](./examples/basic-usage.js) - CommonJS examples
+- [Modern usage](./examples/modern-usage.js) - Tree-shaking examples
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+MIT © Jesse Palmer
+
+## 🙏 Acknowledgments
+
+Emoji data sourced from Unicode.org and Emojipedia.
