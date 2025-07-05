@@ -1,6 +1,6 @@
 # Migration Guide
 
-📖 **For the complete migration guide, please see [docs/wiki/Migration-Guide.md](docs/wiki/Migration-Guide.md)**
+📖 **For the complete migration guide, please see our [GitHub Wiki](https://github.com/jesselpalmer/node-emojis/wiki/Migration-Guide)**
 
 The comprehensive migration guide includes:
 
@@ -18,10 +18,10 @@ The comprehensive migration guide includes:
 
 ## Quick Links
 
-- [Breaking Changes](docs/wiki/Migration-Guide.md#breaking-changes)
-- [Migration Examples](docs/wiki/Migration-Guide.md#migration-examples)
-- [New Features](docs/wiki/Migration-Guide.md#new-features-in-v10)
-- [Troubleshooting](docs/wiki/Migration-Guide.md#troubleshooting-migration)
+- [Breaking Changes](https://github.com/jesselpalmer/node-emojis/wiki/Migration-Guide#breaking-changes)
+- [Migration Examples](https://github.com/jesselpalmer/node-emojis/wiki/Migration-Guide#migration-examples)
+- [New Features](https://github.com/jesselpalmer/node-emojis/wiki/Migration-Guide#new-features-in-v10)
+- [Troubleshooting](https://github.com/jesselpalmer/node-emojis/wiki/Migration-Guide#troubleshooting-migration)
 
 ---
 
