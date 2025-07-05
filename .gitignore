@@ -59,3 +59,16 @@ typings/
 
 # Mac file
 .DS_Store
+
+# TypeScript
+*.tsbuildinfo
+lib/
+test-dist/
+
+# IDE
+.vscode/
+.idea/
+
+# AI tools
+CLAUDE.md
+.claude

@@ -1,12 +1,5 @@
 const puppeteer = require('puppeteer')
-
-const getEmojiName = emojiNameRawStr => {
-  return emojiNameRawStr.replace(/\W/g, ' ')
-    .replace(/ {2}/g, ' ')
-    .replace(/ /g, '_')
-    .replace(/__/g, '_')
-    .toLowerCase()
-}
+const getEmojiName = require('./emoji-name-formatter')
 
 (async () => {
   const browser = await puppeteer.launch()
@@ -36,5 +29,3 @@ const getEmojiName = emojiNameRawStr => {
   console.log(JSON.stringify(emojisObject))
   await browser.close()
 })()
-
-module.exports = getEmojiName

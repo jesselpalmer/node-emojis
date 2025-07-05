@@ -1,0 +1,3254 @@
+{
+  "+1": {
+    "keywords": [
+      "+1"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "-1": {
+    "keywords": [
+      "-1"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "amphora": {
+    "keywords": [
+      "amphora"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "angry": {
+    "keywords": [
+      "angry"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "anguished": {
+    "keywords": [
+      "anguished"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "ant": {
+    "emoji": "🐜",
+    "name": "ant",
+    "category": "animals",
+    "keywords": [
+      "ant",
+      "insect",
+      "bug"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "apple": {
+    "keywords": [
+      "apple"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "aussie_flag": {
+    "keywords": [
+      "aussie flag"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "aussieflag": {
+    "keywords": [
+      "aussieflag"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "australia": {
+    "keywords": [
+      "australia"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "australia_flag": {
+    "keywords": [
+      "australia flag"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "australiaflag": {
+    "keywords": [
+      "australiaflag"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "awkward": {
+    "emoji": "😬",
+    "name": "awkward",
+    "category": "people",
+    "keywords": [
+      "awkward",
+      "face",
+      "grimace"
+    ],
+    "unicodeVersion": "6.1"
+  },
+  "baby": {
+    "emoji": "👶",
+    "name": "baby",
+    "category": "people",
+    "keywords": [
+      "baby",
+      "child",
+      "infant"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "baby_bottle": {
+    "keywords": [
+      "baby bottle"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "balloon": {
+    "keywords": [
+      "balloon"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "banana": {
+    "keywords": [
+      "banana"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "bawling": {
+    "emoji": "😭",
+    "name": "bawling",
+    "category": "people",
+    "keywords": [
+      "crying",
+      "sad",
+      "tears",
+      "face"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "beaming_face_with_smiling_eyes": {
+    "emoji": "😁",
+    "name": "beaming_face_with_smiling_eyes",
+    "category": "people",
+    "keywords": [
+      "beaming",
+      "face",
+      "grin",
+      "happy"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "bear_face": {
+    "emoji": "🐻",
+    "name": "bear_face",
+    "category": "animals",
+    "keywords": [
+      "bear",
+      "face",
+      "animal"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "beer_mug": {
+    "keywords": [
+      "beer mug"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "bento_box": {
+    "keywords": [
+      "bento box"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "bird": {
+    "emoji": "🐦",
+    "name": "bird",
+    "category": "animals",
+    "keywords": [
+      "bird",
+      "animal",
+      "flying"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "birthday": {
+    "keywords": [
+      "birthday"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "birthday_cake": {
+    "keywords": [
+      "birthday cake"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "black_heart": {
+    "keywords": [
+      "black heart"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "black_heart_suit": {
+    "emoji": "♥",
+    "name": "black_heart_suit",
+    "category": "people",
+    "keywords": [
+      "heart",
+      "love",
+      "suit"
+    ],
+    "unicodeVersion": "1.1"
+  },
+  "blackheartsuit": {
+    "emoji": "♥",
+    "name": "blackheartsuit",
+    "category": "people",
+    "keywords": [
+      "heart",
+      "love",
+      "suit"
+    ],
+    "unicodeVersion": "1.1"
+  },
+  "blowfish": {
+    "emoji": "🐡",
+    "name": "blowfish",
+    "category": "animals",
+    "keywords": [
+      "blowfish",
+      "fish",
+      "puffer"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "blue_heart": {
+    "keywords": [
+      "blue heart"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "blush": {
+    "emoji": "😊",
+    "name": "blush",
+    "category": "people",
+    "keywords": [
+      "blush",
+      "face",
+      "happy",
+      "smile"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "boar": {
+    "emoji": "🐗",
+    "name": "boar",
+    "category": "animals",
+    "keywords": [
+      "boar",
+      "pig",
+      "animal"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "bottle_with_popping_cork": {
+    "keywords": [
+      "bottle with popping cork"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "boy": {
+    "emoji": "👦",
+    "name": "boy",
+    "category": "people",
+    "keywords": [
+      "boy",
+      "child",
+      "male"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "bread": {
+    "keywords": [
+      "bread"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "brown_heart": {
+    "keywords": [
+      "brown heart"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "bug": {
+    "emoji": "🐛",
+    "name": "bug",
+    "category": "animals",
+    "keywords": [
+      "bug",
+      "insect",
+      "caterpillar"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "burger": {
+    "keywords": [
+      "burger"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "burrito": {
+    "keywords": [
+      "burrito"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cake": {
+    "keywords": [
+      "cake"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "call_me": {
+    "keywords": [
+      "call me"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "call_me_hand": {
+    "keywords": [
+      "call me hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "camel": {
+    "emoji": "🐫",
+    "name": "camel",
+    "category": "animals",
+    "keywords": [
+      "camel",
+      "desert",
+      "hump"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "candy": {
+    "keywords": [
+      "candy"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cantaloupe": {
+    "keywords": [
+      "cantaloupe"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "card_with_heart": {
+    "emoji": "💌",
+    "name": "card_with_heart",
+    "category": "people",
+    "keywords": [
+      "card",
+      "heart",
+      "love",
+      "letter"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "cardwithheart": {
+    "emoji": "💌",
+    "name": "cardwithheart",
+    "category": "people",
+    "keywords": [
+      "card",
+      "heart",
+      "love",
+      "letter"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "cat": {
+    "emoji": "🐈",
+    "name": "cat",
+    "category": "animals",
+    "keywords": [
+      "cat",
+      "pet",
+      "feline",
+      "kitty"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "cat_face": {
+    "emoji": "🐱",
+    "name": "cat_face",
+    "category": "animals",
+    "keywords": [
+      "cat",
+      "face",
+      "pet",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "celebration": {
+    "keywords": [
+      "celebration"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "cheese": {
+    "keywords": [
+      "cheese"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cheese_wedge": {
+    "keywords": [
+      "cheese wedge"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cheeseburger": {
+    "keywords": [
+      "cheeseburger"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cheesewedge": {
+    "keywords": [
+      "cheesewedge"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cherries": {
+    "keywords": [
+      "cherries"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "chestnut": {
+    "keywords": [
+      "chestnut"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "chicken": {
+    "emoji": "🐔",
+    "name": "chicken",
+    "category": "animals",
+    "keywords": [
+      "chicken",
+      "bird",
+      "farm"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "child": {
+    "keywords": [
+      "child"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "chipmunk": {
+    "emoji": "🐿️",
+    "name": "chipmunk",
+    "category": "animals",
+    "keywords": [
+      "chipmunk",
+      "squirrel",
+      "animal"
+    ],
+    "unicodeVersion": "7.0"
+  },
+  "chocolate_bar": {
+    "keywords": [
+      "chocolate bar"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "clap": {
+    "keywords": [
+      "clap"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "clapping": {
+    "keywords": [
+      "clapping"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "clapping_hands": {
+    "keywords": [
+      "clapping hands"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "clinking_beer_mugs": {
+    "keywords": [
+      "clinking beer mugs"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cocktail_glass": {
+    "keywords": [
+      "cocktail glass"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cold_face": {
+    "emoji": "🥶",
+    "name": "cold_face",
+    "category": "people",
+    "keywords": [
+      "cold",
+      "freezing",
+      "blue",
+      "frozen"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "confetti_ball": {
+    "keywords": [
+      "confetti ball"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "cooked_rice": {
+    "keywords": [
+      "cooked rice"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cookie": {
+    "keywords": [
+      "cookie"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cooking": {
+    "keywords": [
+      "cooking"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cool": {
+    "keywords": [
+      "cool"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "corn": {
+    "keywords": [
+      "corn"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "cow": {
+    "emoji": "🐄",
+    "name": "cow",
+    "category": "animals",
+    "keywords": [
+      "cow",
+      "farm",
+      "moo",
+      "milk"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "cow_face": {
+    "emoji": "🐮",
+    "name": "cow_face",
+    "category": "animals",
+    "keywords": [
+      "cow",
+      "face",
+      "farm",
+      "animal"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "cowboy": {
+    "keywords": [
+      "cowboy"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "crab": {
+    "keywords": [
+      "crab"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "crazy_face": {
+    "emoji": "🤪",
+    "name": "crazy_face",
+    "category": "people",
+    "keywords": [
+      "zany",
+      "crazy",
+      "goofy",
+      "wacky"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "crocodile": {
+    "emoji": "🐊",
+    "name": "crocodile",
+    "category": "animals",
+    "keywords": [
+      "crocodile",
+      "alligator",
+      "reptile"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "croissant": {
+    "keywords": [
+      "croissant"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "crossed_fingers": {
+    "keywords": [
+      "crossed fingers"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "crying": {
+    "keywords": [
+      "crying"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "custard": {
+    "keywords": [
+      "custard"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "dango": {
+    "keywords": [
+      "dango"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "disappointed": {
+    "keywords": [
+      "disappointed"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "disappointed_face": {
+    "keywords": [
+      "disappointed face"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "dissatisfied": {
+    "keywords": [
+      "dissatisfied"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "distraught_face": {
+    "keywords": [
+      "distraught face"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "dizzy_face": {
+    "emoji": "🥴",
+    "name": "dizzy_face",
+    "category": "people",
+    "keywords": [
+      "woozy",
+      "dizzy",
+      "confused",
+      "drunk"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "dog": {
+    "emoji": "🐕",
+    "name": "dog",
+    "category": "animals",
+    "keywords": [
+      "dog",
+      "pet",
+      "animal",
+      "puppy"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "dog_face": {
+    "emoji": "🐶",
+    "name": "dog_face",
+    "category": "animals",
+    "keywords": [
+      "dog",
+      "face",
+      "pet",
+      "puppy"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "dogface": {
+    "emoji": "🐶",
+    "name": "dogface",
+    "category": "animals",
+    "keywords": [
+      "dog",
+      "face",
+      "pet",
+      "puppy"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "doggo": {
+    "emoji": "🐕",
+    "name": "doggo",
+    "category": "animals",
+    "keywords": [
+      "dog",
+      "doggo",
+      "pet",
+      "puppy"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "domestic_cat": {
+    "emoji": "🐈",
+    "name": "domestic_cat",
+    "category": "animals",
+    "keywords": [
+      "cat",
+      "domestic",
+      "pet",
+      "feline"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "domesticcat": {
+    "emoji": "🐈",
+    "name": "domesticcat",
+    "category": "animals",
+    "keywords": [
+      "cat",
+      "domestic",
+      "pet",
+      "feline"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "doughnut": {
+    "keywords": [
+      "doughnut"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "dove": {
+    "emoji": "🕊️",
+    "name": "dove",
+    "category": "animals",
+    "keywords": [
+      "dove",
+      "bird",
+      "peace",
+      "fly"
+    ],
+    "unicodeVersion": "7.0"
+  },
+  "drool": {
+    "keywords": [
+      "drool"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "drooling": {
+    "keywords": [
+      "drooling"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "drooling_face": {
+    "keywords": [
+      "drooling face"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "ear_of_corn": {
+    "keywords": [
+      "ear of corn"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "eggplant": {
+    "keywords": [
+      "eggplant"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "elderly_man": {
+    "keywords": [
+      "elderly man"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "elderly_woman": {
+    "keywords": [
+      "elderly woman"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "elephant": {
+    "emoji": "🐘",
+    "name": "elephant",
+    "category": "animals",
+    "keywords": [
+      "elephant",
+      "animal",
+      "trunk",
+      "safari"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "ewe": {
+    "emoji": "🐑",
+    "name": "ewe",
+    "category": "animals",
+    "keywords": [
+      "sheep",
+      "ewe",
+      "farm",
+      "wool"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "exploding_head": {
+    "emoji": "🤯",
+    "name": "exploding_head",
+    "category": "people",
+    "keywords": [
+      "exploding",
+      "mind",
+      "blown",
+      "shocked"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "expressionless": {
+    "keywords": [
+      "expressionless"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "expressionless_face": {
+    "keywords": [
+      "expressionless face"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "eye_roll": {
+    "keywords": [
+      "eye roll"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "eyeroll": {
+    "keywords": [
+      "eyeroll"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "face_blowing_a_kiss": {
+    "emoji": "😘",
+    "name": "face_blowing_a_kiss",
+    "category": "people",
+    "keywords": [
+      "kissing",
+      "heart",
+      "face",
+      "love"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "face_with_hand_over_mouth": {
+    "emoji": "🤭",
+    "name": "face_with_hand_over_mouth",
+    "category": "people",
+    "keywords": [
+      "giggling",
+      "chuckling",
+      "hand",
+      "mouth"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "face_with_head_bandage": {
+    "keywords": [
+      "face with head bandage"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "face_with_hearts": {
+    "emoji": "🥰",
+    "name": "face_with_hearts",
+    "category": "people",
+    "keywords": [
+      "love",
+      "hearts",
+      "adoring",
+      "crush"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "face_with_medical_mask": {
+    "keywords": [
+      "face with medical mask"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "face_with_raised_eyebrow": {
+    "emoji": "🤨",
+    "name": "face_with_raised_eyebrow",
+    "category": "people",
+    "keywords": [
+      "skeptical",
+      "suspicious",
+      "eyebrow"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "face_with_rolling_eyes": {
+    "keywords": [
+      "face with rolling eyes"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "face_with_tears_of_joy": {
+    "emoji": "😂",
+    "name": "face_with_tears_of_joy",
+    "category": "people",
+    "keywords": [
+      "joy",
+      "laugh",
+      "tears",
+      "funny",
+      "happy"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "face_with_thermometer": {
+    "keywords": [
+      "face with thermometer"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "face_with_tongue": {
+    "emoji": "😛",
+    "name": "face_with_tongue",
+    "category": "people",
+    "keywords": [
+      "tongue",
+      "face",
+      "silly"
+    ],
+    "unicodeVersion": "6.1"
+  },
+  "face_without_mouth": {
+    "keywords": [
+      "face without mouth"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "fearful": {
+    "keywords": [
+      "fearful"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "fearful_face": {
+    "keywords": [
+      "fearful face"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "feline": {
+    "emoji": "🐈",
+    "name": "feline",
+    "category": "animals",
+    "keywords": [
+      "cat",
+      "feline",
+      "pet",
+      "animal"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "female": {
+    "keywords": [
+      "female"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "fingers_crossed": {
+    "keywords": [
+      "fingers crossed"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "fire": {
+    "emoji": "🔥",
+    "name": "fire",
+    "category": "nature",
+    "keywords": [
+      "fire",
+      "flame",
+      "hot",
+      "burn"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "fish_cake_with_swirl": {
+    "keywords": [
+      "fish cake with swirl"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "flag_of_australia": {
+    "keywords": [
+      "flag of australia"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "flagofaustralia": {
+    "keywords": [
+      "flagofaustralia"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "flame": {
+    "emoji": "🔥",
+    "name": "flame",
+    "category": "nature",
+    "keywords": [
+      "flame",
+      "fire",
+      "hot",
+      "burn"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "flexed_biceps": {
+    "keywords": [
+      "flexed biceps"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "fork_and_knife": {
+    "keywords": [
+      "fork and knife"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "fork_and_knife_with_plate": {
+    "keywords": [
+      "fork and knife with plate"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "freezing": {
+    "emoji": "🥶",
+    "name": "freezing",
+    "category": "people",
+    "keywords": [
+      "cold",
+      "freezing",
+      "blue",
+      "frozen"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "french_fries": {
+    "keywords": [
+      "french fries"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "fried_shrimp": {
+    "keywords": [
+      "fried shrimp"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "frog_face": {
+    "emoji": "🐸",
+    "name": "frog_face",
+    "category": "animals",
+    "keywords": [
+      "frog",
+      "face",
+      "amphibian",
+      "toad"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "frogface": {
+    "emoji": "🐸",
+    "name": "frogface",
+    "category": "animals",
+    "keywords": [
+      "frog",
+      "face",
+      "amphibian",
+      "toad"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "fuji_san": {
+    "keywords": [
+      "fuji san"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "fujisan": {
+    "keywords": [
+      "fujisan"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "furious": {
+    "keywords": [
+      "furious"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "geek": {
+    "keywords": [
+      "geek"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "giggling": {
+    "emoji": "🤭",
+    "name": "giggling",
+    "category": "people",
+    "keywords": [
+      "giggling",
+      "chuckling",
+      "hand",
+      "mouth"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "girl": {
+    "keywords": [
+      "girl"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "goat": {
+    "emoji": "🐐",
+    "name": "goat",
+    "category": "animals",
+    "keywords": [
+      "goat",
+      "animal",
+      "farm"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "grandma": {
+    "keywords": [
+      "grandma"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "grandpa": {
+    "keywords": [
+      "grandpa"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "grape": {
+    "keywords": [
+      "grape"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "grapes": {
+    "keywords": [
+      "grapes"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "green_apple": {
+    "keywords": [
+      "green apple"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "green_heart": {
+    "keywords": [
+      "green heart"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "grey_heart": {
+    "emoji": "🩶",
+    "name": "grey_heart",
+    "category": "people",
+    "keywords": [
+      "grey",
+      "gray",
+      "heart",
+      "neutral"
+    ],
+    "unicodeVersion": "15.0"
+  },
+  "grimacing": {
+    "keywords": [
+      "grimacing"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "grin": {
+    "keywords": [
+      "grin"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "grinning": {
+    "emoji": "😀",
+    "name": "grinning",
+    "category": "people",
+    "keywords": [
+      "grinning",
+      "face",
+      "smile",
+      "happy"
+    ],
+    "unicodeVersion": "6.1"
+  },
+  "grinning_face": {
+    "emoji": "😀",
+    "name": "grinning_face",
+    "category": "people",
+    "keywords": [
+      "grinning",
+      "face",
+      "smile",
+      "happy"
+    ],
+    "unicodeVersion": "6.1"
+  },
+  "hamburger": {
+    "keywords": [
+      "hamburger"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "hamster_face": {
+    "emoji": "🐹",
+    "name": "hamster_face",
+    "category": "animals",
+    "keywords": [
+      "hamster",
+      "face",
+      "pet",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "hamsterface": {
+    "emoji": "🐹",
+    "name": "hamsterface",
+    "category": "animals",
+    "keywords": [
+      "hamster",
+      "face",
+      "pet",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "hand": {
+    "keywords": [
+      "hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "happy": {
+    "keywords": [
+      "happy"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "heart": {
+    "keywords": [
+      "heart"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "heart_eyes": {
+    "emoji": "😍",
+    "name": "heart_eyes",
+    "category": "people",
+    "keywords": [
+      "heart",
+      "eyes",
+      "love",
+      "face"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "heart_suit": {
+    "keywords": [
+      "heart suit"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "honey_pot": {
+    "keywords": [
+      "honey pot"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "honeybee": {
+    "emoji": "🐝",
+    "name": "honeybee",
+    "category": "animals",
+    "keywords": [
+      "bee",
+      "honey",
+      "insect",
+      "buzz"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "honeydew": {
+    "keywords": [
+      "honeydew"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "horse": {
+    "emoji": "🐴",
+    "name": "horse",
+    "category": "animals",
+    "keywords": [
+      "horse",
+      "face",
+      "animal",
+      "farm"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "horse_face": {
+    "emoji": "🐴",
+    "name": "horse_face",
+    "category": "animals",
+    "keywords": [
+      "horse",
+      "face",
+      "animal",
+      "farm"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "hot": {
+    "emoji": "🔥",
+    "name": "hot",
+    "category": "nature",
+    "keywords": [
+      "hot",
+      "fire",
+      "flame",
+      "spicy"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "hot_beverage": {
+    "keywords": [
+      "hot beverage"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "hot_dog": {
+    "keywords": [
+      "hot dog"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "hot_face": {
+    "emoji": "🥵",
+    "name": "hot_face",
+    "category": "people",
+    "keywords": [
+      "hot",
+      "sweating",
+      "heat",
+      "temperature"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "hot_pepper": {
+    "keywords": [
+      "hot pepper"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "hotdog": {
+    "keywords": [
+      "hotdog"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "housecat": {
+    "emoji": "🐈",
+    "name": "housecat",
+    "category": "animals",
+    "keywords": [
+      "cat",
+      "house",
+      "pet",
+      "feline"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "i_love_you": {
+    "keywords": [
+      "i love you"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "ice_cream": {
+    "keywords": [
+      "ice cream"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "innocent": {
+    "emoji": "😇",
+    "name": "innocent",
+    "category": "people",
+    "keywords": [
+      "innocent",
+      "angel",
+      "halo",
+      "face"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "joy": {
+    "emoji": "😂",
+    "name": "joy",
+    "category": "people",
+    "keywords": [
+      "joy",
+      "laugh",
+      "tears",
+      "funny",
+      "happy"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "kiss": {
+    "keywords": [
+      "kiss"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "kiss_mark": {
+    "keywords": [
+      "kiss mark"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "kissing": {
+    "emoji": "😗",
+    "name": "kissing",
+    "category": "people",
+    "keywords": [
+      "kissing",
+      "face",
+      "love"
+    ],
+    "unicodeVersion": "6.1"
+  },
+  "kissing_face": {
+    "emoji": "😗",
+    "name": "kissing_face",
+    "category": "people",
+    "keywords": [
+      "kissing",
+      "face",
+      "love"
+    ],
+    "unicodeVersion": "6.1"
+  },
+  "kissing_heart": {
+    "emoji": "😘",
+    "name": "kissing_heart",
+    "category": "people",
+    "keywords": [
+      "kissing",
+      "heart",
+      "face",
+      "love"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "kissing_lips": {
+    "keywords": [
+      "kissing lips"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "koala": {
+    "emoji": "🐨",
+    "name": "koala",
+    "category": "animals",
+    "keywords": [
+      "koala",
+      "australia",
+      "animal",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "laughing": {
+    "emoji": "😆",
+    "name": "laughing",
+    "category": "people",
+    "keywords": [
+      "laughing",
+      "happy",
+      "smile",
+      "face"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "leftwards_hand": {
+    "keywords": [
+      "leftwards hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "leftwards_pushing_hand": {
+    "keywords": [
+      "leftwards pushing hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "lemon": {
+    "keywords": [
+      "lemon"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "lemonade": {
+    "keywords": [
+      "lemonade"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "leopard": {
+    "emoji": "🐆",
+    "name": "leopard",
+    "category": "animals",
+    "keywords": [
+      "leopard",
+      "animal",
+      "cat",
+      "spots"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "light_blue_heart": {
+    "emoji": "🩵",
+    "name": "light_blue_heart",
+    "category": "people",
+    "keywords": [
+      "light",
+      "blue",
+      "heart",
+      "love"
+    ],
+    "unicodeVersion": "15.0"
+  },
+  "lion_face": {
+    "emoji": "🦁",
+    "name": "lion_face",
+    "category": "animals",
+    "keywords": [
+      "lion",
+      "face",
+      "animal",
+      "king"
+    ],
+    "unicodeVersion": "8.0"
+  },
+  "lit": {
+    "emoji": "🔥",
+    "name": "lit",
+    "category": "nature",
+    "keywords": [
+      "lit",
+      "fire",
+      "cool",
+      "awesome"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "load_of_bread": {
+    "keywords": [
+      "load of bread"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "loadofbread": {
+    "keywords": [
+      "loadofbread"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "lollipop": {
+    "keywords": [
+      "lollipop"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "love_face": {
+    "emoji": "🥰",
+    "name": "love_face",
+    "category": "people",
+    "keywords": [
+      "love",
+      "hearts",
+      "adoring",
+      "crush"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "love_letter": {
+    "keywords": [
+      "love letter"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "love_you_gesture": {
+    "keywords": [
+      "love you gesture"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "mad": {
+    "keywords": [
+      "mad"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "male": {
+    "keywords": [
+      "male"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "man": {
+    "keywords": [
+      "man"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "mandarin": {
+    "keywords": [
+      "mandarin"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "mask": {
+    "keywords": [
+      "mask"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "meat_on_bone": {
+    "keywords": [
+      "meat on bone"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "melon": {
+    "keywords": [
+      "melon"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "metal": {
+    "keywords": [
+      "metal"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "mind_blown": {
+    "emoji": "🤯",
+    "name": "mind_blown",
+    "category": "people",
+    "keywords": [
+      "exploding",
+      "mind",
+      "blown",
+      "shocked"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "monkey": {
+    "emoji": "🐒",
+    "name": "monkey",
+    "category": "animals",
+    "keywords": [
+      "monkey",
+      "animal",
+      "primate"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "monkey_face": {
+    "emoji": "🐵",
+    "name": "monkey_face",
+    "category": "animals",
+    "keywords": [
+      "monkey",
+      "face",
+      "animal",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "monkeyface": {
+    "emoji": "🐵",
+    "name": "monkeyface",
+    "category": "animals",
+    "keywords": [
+      "monkey",
+      "face",
+      "animal",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "mount_fuji": {
+    "keywords": [
+      "mount fuji"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "mountfuji": {
+    "keywords": [
+      "mountfuji"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "mouse": {
+    "emoji": "🐭",
+    "name": "mouse",
+    "category": "animals",
+    "keywords": [
+      "mouse",
+      "face",
+      "rodent",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "mouse_face": {
+    "emoji": "🐭",
+    "name": "mouse_face",
+    "category": "animals",
+    "keywords": [
+      "mouse",
+      "face",
+      "rodent",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "muscle": {
+    "keywords": [
+      "muscle"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "mushroom": {
+    "keywords": [
+      "mushroom"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "muskmelon": {
+    "keywords": [
+      "muskmelon"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "mute": {
+    "keywords": [
+      "mute"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "nerd": {
+    "keywords": [
+      "nerd"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "neutral_face": {
+    "keywords": [
+      "neutral face"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "octopus": {
+    "emoji": "🐙",
+    "name": "octopus",
+    "category": "animals",
+    "keywords": [
+      "octopus",
+      "animal",
+      "ocean",
+      "tentacles"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "oden": {
+    "keywords": [
+      "oden"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "ok_hand": {
+    "keywords": [
+      "ok hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "orange": {
+    "keywords": [
+      "orange"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "orange_heart": {
+    "keywords": [
+      "orange heart"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "overheated": {
+    "emoji": "🥵",
+    "name": "overheated",
+    "category": "people",
+    "keywords": [
+      "hot",
+      "sweating",
+      "heat",
+      "temperature"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "overwhelmed": {
+    "emoji": "🫨",
+    "name": "overwhelmed",
+    "category": "people",
+    "keywords": [
+      "shaking",
+      "震",
+      "overwhelmed",
+      "震惊"
+    ],
+    "unicodeVersion": "15.0"
+  },
+  "ox": {
+    "emoji": "🐂",
+    "name": "ox",
+    "category": "animals",
+    "keywords": [
+      "ox",
+      "bull",
+      "animal",
+      "farm"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "palm_down_hand": {
+    "keywords": [
+      "palm down hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "palm_up_hand": {
+    "keywords": [
+      "palm up hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "pancakes": {
+    "keywords": [
+      "pancakes"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "panda_face": {
+    "emoji": "🐼",
+    "name": "panda_face",
+    "category": "animals",
+    "keywords": [
+      "panda",
+      "face",
+      "animal",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "party": {
+    "keywords": [
+      "party"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "partying_face": {
+    "emoji": "🥳",
+    "name": "partying_face",
+    "category": "people",
+    "keywords": [
+      "party",
+      "celebration",
+      "birthday",
+      "hat"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "peace": {
+    "keywords": [
+      "peace"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "peach": {
+    "keywords": [
+      "peach"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "pear": {
+    "keywords": [
+      "pear"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "penguin": {
+    "emoji": "🐧",
+    "name": "penguin",
+    "category": "animals",
+    "keywords": [
+      "penguin",
+      "animal",
+      "antarctica",
+      "cold"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "pig": {
+    "emoji": "🐖",
+    "name": "pig",
+    "category": "animals",
+    "keywords": [
+      "pig",
+      "animal",
+      "farm",
+      "oink"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "pig_face": {
+    "emoji": "🐷",
+    "name": "pig_face",
+    "category": "animals",
+    "keywords": [
+      "pig",
+      "face",
+      "animal",
+      "farm"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "pig_nose": {
+    "emoji": "🐽",
+    "name": "pig_nose",
+    "category": "animals",
+    "keywords": [
+      "pig",
+      "nose",
+      "snout",
+      "oink"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "pinched_fingers": {
+    "keywords": [
+      "pinched fingers"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "pinching_hand": {
+    "keywords": [
+      "pinching hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "pineapple": {
+    "keywords": [
+      "pineapple"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "pink_heart": {
+    "emoji": "🩷",
+    "name": "pink_heart",
+    "category": "people",
+    "keywords": [
+      "pink",
+      "heart",
+      "love",
+      "romance"
+    ],
+    "unicodeVersion": "15.0"
+  },
+  "pizza": {
+    "keywords": [
+      "pizza"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "plantain": {
+    "keywords": [
+      "plantain"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "pleading": {
+    "emoji": "🥺",
+    "name": "pleading",
+    "category": "people",
+    "keywords": [
+      "pleading",
+      "begging",
+      "puppy",
+      "eyes"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "pleading_face": {
+    "emoji": "🥺",
+    "name": "pleading_face",
+    "category": "people",
+    "keywords": [
+      "pleading",
+      "begging",
+      "puppy",
+      "eyes"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "point_down": {
+    "keywords": [
+      "point down"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "point_left": {
+    "keywords": [
+      "point left"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "point_right": {
+    "keywords": [
+      "point right"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "point_up": {
+    "keywords": [
+      "point up"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "pointing_down": {
+    "keywords": [
+      "pointing down"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "pointing_left": {
+    "keywords": [
+      "pointing left"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "pointing_right": {
+    "keywords": [
+      "pointing right"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "pointing_up": {
+    "keywords": [
+      "pointing up"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "popcorn": {
+    "keywords": [
+      "popcorn"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "pot_of_food": {
+    "keywords": [
+      "pot of food"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "poultry_leg": {
+    "keywords": [
+      "poultry leg"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "purple_heart": {
+    "keywords": [
+      "purple heart"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "rabbit": {
+    "emoji": "🐇",
+    "name": "rabbit",
+    "category": "animals",
+    "keywords": [
+      "rabbit",
+      "bunny",
+      "animal",
+      "hop"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "rabbit_face": {
+    "emoji": "🐰",
+    "name": "rabbit_face",
+    "category": "animals",
+    "keywords": [
+      "rabbit",
+      "face",
+      "bunny",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "rabbitface": {
+    "emoji": "🐰",
+    "name": "rabbitface",
+    "category": "animals",
+    "keywords": [
+      "rabbit",
+      "face",
+      "bunny",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "rage": {
+    "keywords": [
+      "rage"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "raised_hand": {
+    "keywords": [
+      "raised hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "ram": {
+    "emoji": "🐏",
+    "name": "ram",
+    "category": "animals",
+    "keywords": [
+      "ram",
+      "sheep",
+      "animal",
+      "horns"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "rat": {
+    "emoji": "🐀",
+    "name": "rat",
+    "category": "animals",
+    "keywords": [
+      "rat",
+      "rodent",
+      "animal"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "red_apple": {
+    "keywords": [
+      "red apple"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "red_heart": {
+    "keywords": [
+      "red heart"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "relaxed": {
+    "emoji": "☺️",
+    "name": "relaxed",
+    "category": "people",
+    "keywords": [
+      "relaxed",
+      "smile",
+      "face",
+      "calm"
+    ],
+    "unicodeVersion": "1.1"
+  },
+  "relieved": {
+    "emoji": "😌",
+    "name": "relieved",
+    "category": "people",
+    "keywords": [
+      "relieved",
+      "face",
+      "calm",
+      "peaceful"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "rice_ball": {
+    "keywords": [
+      "rice ball"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "rice_cracker": {
+    "keywords": [
+      "rice cracker"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "rightwards_hand": {
+    "keywords": [
+      "rightwards hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "rightwards_pushing_hand": {
+    "keywords": [
+      "rightwards pushing hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "roasted_sweet_potato": {
+    "keywords": [
+      "roasted sweet potato"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "rockmelon": {
+    "keywords": [
+      "rockmelon"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "rofl": {
+    "emoji": "🤣",
+    "name": "rofl",
+    "category": "people",
+    "keywords": [
+      "rofl",
+      "laugh",
+      "funny"
+    ],
+    "unicodeVersion": "9.0"
+  },
+  "rolling_on_the_floor_laughing": {
+    "emoji": "🤣",
+    "name": "rolling_on_the_floor_laughing",
+    "category": "people",
+    "keywords": [
+      "rofl",
+      "laugh",
+      "funny"
+    ],
+    "unicodeVersion": "9.0"
+  },
+  "rooster": {
+    "emoji": "🐓",
+    "category": "animals",
+    "keywords": [
+      "bird",
+      "chicken",
+      "farm"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "roster": {
+    "emoji": "🐓",
+    "name": "roster",
+    "category": "animals",
+    "keywords": [
+      "rooster",
+      "chicken",
+      "bird",
+      "farm"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "sad": {
+    "keywords": [
+      "sad"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "sake": {
+    "keywords": [
+      "sake"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "satisfied": {
+    "emoji": "😆",
+    "name": "satisfied",
+    "category": "people",
+    "keywords": [
+      "satisfied",
+      "happy",
+      "smile",
+      "face"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "sausage": {
+    "keywords": [
+      "sausage"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "scorpion": {
+    "emoji": "🦂",
+    "name": "scorpion",
+    "category": "animals",
+    "keywords": [
+      "scorpion",
+      "animal",
+      "arachnid",
+      "sting"
+    ],
+    "unicodeVersion": "8.0"
+  },
+  "shaking_face": {
+    "emoji": "🫨",
+    "name": "shaking_face",
+    "category": "people",
+    "keywords": [
+      "shaking",
+      "震",
+      "overwhelmed",
+      "震惊"
+    ],
+    "unicodeVersion": "15.0"
+  },
+  "shaved_ice": {
+    "keywords": [
+      "shaved ice"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "shortcake": {
+    "keywords": [
+      "shortcake"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "shush": {
+    "emoji": "🤫",
+    "name": "shush",
+    "category": "people",
+    "keywords": [
+      "shush",
+      "quiet",
+      "silence",
+      "secret"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "shushing_face": {
+    "emoji": "🤫",
+    "name": "shushing_face",
+    "category": "people",
+    "keywords": [
+      "shush",
+      "quiet",
+      "silence",
+      "secret"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "sick": {
+    "keywords": [
+      "sick"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "sign_of_the_horns": {
+    "keywords": [
+      "sign of the horns"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "skeptical": {
+    "emoji": "🤨",
+    "name": "skeptical",
+    "category": "people",
+    "keywords": [
+      "skeptical",
+      "suspicious",
+      "eyebrow"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "sleeping": {
+    "keywords": [
+      "sleeping"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "sleeping_face": {
+    "keywords": [
+      "sleeping face"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "smile": {
+    "keywords": [
+      "smile"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "smiley": {
+    "keywords": [
+      "smiley"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "smiling_face": {
+    "emoji": "☺️",
+    "category": "people",
+    "keywords": [
+      "face",
+      "smile",
+      "happy"
+    ],
+    "unicodeVersion": "1.1"
+  },
+  "smiling_face_with_heart_eyes": {
+    "emoji": "😍",
+    "name": "smiling_face_with_heart_eyes",
+    "category": "people",
+    "keywords": [
+      "heart",
+      "eyes",
+      "love",
+      "face"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "smiling_face_with_hearts": {
+    "emoji": "🥰",
+    "name": "smiling_face_with_hearts",
+    "category": "people",
+    "keywords": [
+      "love",
+      "hearts",
+      "adoring",
+      "crush"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "smiling_face_with_open_mouth": {
+    "keywords": [
+      "smiling face with open mouth"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "smiling_face_with_smiling_eyes": {
+    "keywords": [
+      "smiling face with smiling eyes"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "snail": {
+    "emoji": "🐌",
+    "name": "snail",
+    "category": "animals",
+    "keywords": [
+      "snail",
+      "slow",
+      "shell",
+      "mollusk"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "snake": {
+    "emoji": "🐍",
+    "name": "snake",
+    "category": "animals",
+    "keywords": [
+      "snake",
+      "serpent",
+      "reptile",
+      "python"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "snapstreak": {
+    "emoji": "🔥",
+    "name": "snapstreak",
+    "category": "nature",
+    "keywords": [
+      "snapstreak",
+      "snapchat",
+      "fire",
+      "streak"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "snore": {
+    "keywords": [
+      "snore"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "snoring_face": {
+    "keywords": [
+      "snoring face"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "snow_capped_mountain": {
+    "keywords": [
+      "snow capped mountain"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "snowcappedmountain": {
+    "keywords": [
+      "snowcappedmountain"
+    ],
+    "category": "travel",
+    "unicodeVersion": "1.0"
+  },
+  "sob": {
+    "keywords": [
+      "sob"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "soft_ice_cream": {
+    "keywords": [
+      "soft ice cream"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "spaghetti": {
+    "keywords": [
+      "spaghetti"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "spider": {
+    "emoji": "🕷️",
+    "name": "spider",
+    "category": "animals",
+    "keywords": [
+      "spider",
+      "arachnid",
+      "insect",
+      "web"
+    ],
+    "unicodeVersion": "7.0"
+  },
+  "star_struck": {
+    "emoji": "🤩",
+    "name": "star_struck",
+    "category": "people",
+    "keywords": [
+      "star",
+      "struck",
+      "excited",
+      "eyes"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "starstruck": {
+    "emoji": "🤩",
+    "name": "starstruck",
+    "category": "people",
+    "keywords": [
+      "star",
+      "struck",
+      "excited",
+      "eyes"
+    ],
+    "unicodeVersion": "10.0"
+  },
+  "steaming_bowl": {
+    "keywords": [
+      "steaming bowl"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "strawberry": {
+    "keywords": [
+      "strawberry"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "stuck_out_tongue": {
+    "emoji": "😛",
+    "name": "stuck_out_tongue",
+    "category": "people",
+    "keywords": [
+      "tongue",
+      "face",
+      "silly"
+    ],
+    "unicodeVersion": "6.1"
+  },
+  "stuck_out_tongue_winking_eye": {
+    "emoji": "😜",
+    "name": "stuck_out_tongue_winking_eye",
+    "category": "people",
+    "keywords": [
+      "tongue",
+      "wink",
+      "face",
+      "silly"
+    ],
+    "unicodeVersion": "6.1"
+  },
+  "sunglasses": {
+    "keywords": [
+      "sunglasses"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "sushi": {
+    "keywords": [
+      "sushi"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "sweat_smile": {
+    "emoji": "😅",
+    "name": "sweat_smile",
+    "category": "people",
+    "keywords": [
+      "sweat",
+      "smile",
+      "face",
+      "happy",
+      "exercise"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "taco": {
+    "keywords": [
+      "taco"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "tada": {
+    "keywords": [
+      "tada"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "tangerine": {
+    "keywords": [
+      "tangerine"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "teacup_without_handle": {
+    "keywords": [
+      "teacup without handle"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "thinking": {
+    "emoji": "🤔",
+    "name": "thinking",
+    "category": "people",
+    "keywords": [
+      "thinking",
+      "face",
+      "consider",
+      "hmm"
+    ],
+    "unicodeVersion": "8.0"
+  },
+  "thinking_face": {
+    "emoji": "🤔",
+    "name": "thinking_face",
+    "category": "people",
+    "keywords": [
+      "thinking",
+      "face",
+      "consider",
+      "hmm"
+    ],
+    "unicodeVersion": "8.0"
+  },
+  "thumbs_down": {
+    "keywords": [
+      "thumbs down"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "thumbs_up": {
+    "keywords": [
+      "thumbs up"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "thumbsdown": {
+    "keywords": [
+      "thumbsdown"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "thumbsup": {
+    "keywords": [
+      "thumbsup"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "tiger": {
+    "emoji": "🐅",
+    "name": "tiger",
+    "category": "animals",
+    "keywords": [
+      "tiger",
+      "animal",
+      "cat",
+      "stripes"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "tiger_face": {
+    "emoji": "🐯",
+    "name": "tiger_face",
+    "category": "animals",
+    "keywords": [
+      "tiger",
+      "face",
+      "animal",
+      "cute"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "tired": {
+    "keywords": [
+      "tired"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "tomato": {
+    "keywords": [
+      "tomato"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "tropical_drink": {
+    "keywords": [
+      "tropical drink"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "turkey": {
+    "emoji": "🦃",
+    "name": "turkey",
+    "category": "animals",
+    "keywords": [
+      "turkey",
+      "bird",
+      "thanksgiving"
+    ],
+    "unicodeVersion": "8.0"
+  },
+  "turtle": {
+    "emoji": "🐢",
+    "name": "turtle",
+    "category": "animals",
+    "keywords": [
+      "turtle",
+      "tortoise",
+      "slow",
+      "shell"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "two_hump_camel": {
+    "emoji": "🐫",
+    "name": "two_hump_camel",
+    "category": "animals",
+    "keywords": [
+      "camel",
+      "bactrian",
+      "desert",
+      "hump"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "unamused": {
+    "keywords": [
+      "unamused"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "unicorn": {
+    "emoji": "🦄",
+    "name": "unicorn",
+    "category": "animals",
+    "keywords": [
+      "unicorn",
+      "face",
+      "fantasy",
+      "magic"
+    ],
+    "unicodeVersion": "8.0"
+  },
+  "victory": {
+    "keywords": [
+      "victory"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "water_buffalo": {
+    "emoji": "🐃",
+    "name": "water_buffalo",
+    "category": "animals",
+    "keywords": [
+      "water",
+      "buffalo",
+      "animal",
+      "ox"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "watermelon": {
+    "keywords": [
+      "watermelon"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "wave": {
+    "keywords": [
+      "wave"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "waving_hand": {
+    "keywords": [
+      "waving hand"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "whale": {
+    "emoji": "🐋",
+    "name": "whale",
+    "category": "animals",
+    "keywords": [
+      "whale",
+      "ocean",
+      "sea",
+      "animal"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "white_heart": {
+    "keywords": [
+      "white heart"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "wine_glass": {
+    "keywords": [
+      "wine glass"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "wink": {
+    "emoji": "😉",
+    "name": "wink",
+    "category": "people",
+    "keywords": [
+      "wink",
+      "face",
+      "flirt"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "winking_face": {
+    "emoji": "😉",
+    "category": "people",
+    "keywords": [
+      "face",
+      "wink",
+      "flirt"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "winking_face_with_tongue": {
+    "emoji": "😜",
+    "name": "winking_face_with_tongue",
+    "category": "people",
+    "keywords": [
+      "tongue",
+      "wink",
+      "face",
+      "silly"
+    ],
+    "unicodeVersion": "6.1"
+  },
+  "wolf_face": {
+    "emoji": "🐺",
+    "name": "wolf_face",
+    "category": "animals",
+    "keywords": [
+      "wolf",
+      "face",
+      "animal",
+      "howl"
+    ],
+    "unicodeVersion": "6.0"
+  },
+  "woman": {
+    "keywords": [
+      "woman"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "woozy_face": {
+    "emoji": "🥴",
+    "name": "woozy_face",
+    "category": "people",
+    "keywords": [
+      "woozy",
+      "dizzy",
+      "confused",
+      "drunk"
+    ],
+    "unicodeVersion": "11.0"
+  },
+  "yawn": {
+    "keywords": [
+      "yawn"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "yawning_face": {
+    "emoji": "🥱",
+    "name": "yawning_face",
+    "category": "people",
+    "keywords": [
+      "yawn",
+      "tired",
+      "sleepy",
+      "bored"
+    ],
+    "unicodeVersion": "12.0"
+  },
+  "yellow_fruit": {
+    "keywords": [
+      "yellow fruit"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "yellow_heart": {
+    "keywords": [
+      "yellow heart"
+    ],
+    "category": "people",
+    "unicodeVersion": "1.0"
+  },
+  "yellowfruit": {
+    "keywords": [
+      "yellowfruit"
+    ],
+    "category": "food",
+    "unicodeVersion": "1.0"
+  },
+  "zany_face": {
+    "emoji": "🤪",
+    "name": "zany_face",
+    "category": "people",
+    "keywords": [
+      "zany",
+      "crazy",
+      "goofy",
+      "wacky"
+    ],
+    "unicodeVersion": "10.0"
+  }
+}
