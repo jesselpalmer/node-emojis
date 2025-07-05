@@ -101,7 +101,10 @@
     "unicode-emojis",
     "emoji-aliases",
     "emoji-library",
-    "node-emoji"
+    "node-emoji",
+    "nodejs",
+    "javascript",
+    "zero-dependencies"
   ],
   "author": "Jesse Palmer <jesselpalmer@gmail.com> (http://jesselpalmer.com/)",
   "license": "MIT",
