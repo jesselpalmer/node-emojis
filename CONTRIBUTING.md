@@ -212,7 +212,16 @@ Remember: These hooks protect code quality and save time for everyone!
 
 ## Release Process
 
-Releases are automated through GitHub Actions when a tag is pushed. Only maintainers can create releases.
+Releases are published manually by maintainers. To release a new version:
+
+1. Ensure all tests pass and coverage meets thresholds
+2. Update version in package.json
+3. Update CHANGELOG.md with release notes
+4. Commit changes: `git commit -m "chore: release v1.0.0"`
+5. Create git tag: `git tag v1.0.0`
+6. Push changes and tag: `git push && git push --tags`
+7. Publish to npm: `npm publish`
+8. Create GitHub release with changelog notes
 
 ## Questions?
 
