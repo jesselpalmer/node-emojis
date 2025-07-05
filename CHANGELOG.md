@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **BREAKING**: Migrated from single CommonJS export to modular ES modules
 - **BREAKING**: Reorganized project structure for better tree-shaking
 - **BREAKING**: Some function signatures changed for TypeScript compatibility
+- **BREAKING**: Minimum Node.js version requirement updated to 20.0.0
 - Improved search algorithm with better scoring
 - Enhanced metadata structure with full type safety
 - Modernized build toolchain with TypeScript compiler

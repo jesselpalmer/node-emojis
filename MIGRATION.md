@@ -7,6 +7,7 @@
 - **JSON-based data** - Smaller bundle sizes and better performance
 - **Full TypeScript support** - Complete type definitions
 - **New features** - Filters, validators, and more utilities
+- **Node.js 20+ requirement** - Updated minimum Node.js version for better ES module support
 
 ## ✅ Backward Compatibility
 

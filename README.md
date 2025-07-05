@@ -20,6 +20,11 @@ A modern, tree-shakeable emoji library for Node.js and browsers with TypeScript 
 - 🚀 **Zero dependencies**
 - ⚡ **Optimized** for performance
 
+## 📋 Requirements
+
+- Node.js 20.0.0 or higher
+- TypeScript 5.0+ (for TypeScript users)
+
 ## 📦 Installation
 
 ```bash
