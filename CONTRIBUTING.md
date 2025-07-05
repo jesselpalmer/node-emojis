@@ -115,10 +115,65 @@ node-emojis/
 
 ### Commit Messages
 
-- Use clear and meaningful commit messages
-- Start with a verb in present tense (e.g., "Add", "Fix", "Update")
-- Keep the first line under 72 characters
-- Reference issues and pull requests where applicable
+We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification for our commit messages. This leads to more readable messages that are easy to follow when looking through the project history.
+
+#### Format
+
+```text
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+#### Types
+
+- **feat**: A new feature
+- **fix**: A bug fix
+- **docs**: Documentation only changes
+- **style**: Changes that do not affect the meaning of the code (formatting, missing semicolons, etc)
+- **refactor**: A code change that neither fixes a bug nor adds a feature
+- **perf**: A code change that improves performance
+- **test**: Adding missing tests or correcting existing tests
+- **build**: Changes that affect the build system or external dependencies
+- **ci**: Changes to our CI configuration files and scripts
+- **chore**: Other changes that don't modify src or test files
+
+#### Examples
+
+```bash
+# Feature
+feat: add skin tone support for human emojis
+
+# Bug fix
+fix: correct emoji lookup for aliases
+
+# Documentation
+docs: update README with tree-shaking examples
+
+# Breaking change
+feat!: migrate to ES modules
+
+BREAKING CHANGE: The package now uses ES modules. 
+CommonJS is still supported via backward compatibility layer.
+
+# Commit with scope
+feat(search): add fuzzy search capability
+
+# Commit with issue reference
+fix: resolve duplicate emoji entries
+
+Fixes #123
+```
+
+#### Guidelines
+
+- Keep the subject line under 50 characters
+- Use the imperative mood ("add" not "added" or "adds")
+- Don't capitalize the first letter
+- Don't end with a period
+- Reference issues and PRs in the footer when applicable
 
 ### Adding New Emojis
 
