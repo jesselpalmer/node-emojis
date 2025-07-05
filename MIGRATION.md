@@ -22,3 +22,7 @@ The comprehensive migration guide includes:
 - [Migration Examples](docs/wiki/Migration-Guide.md#migration-examples)
 - [New Features](docs/wiki/Migration-Guide.md#new-features-in-v10)
 - [Troubleshooting](docs/wiki/Migration-Guide.md#troubleshooting-migration)
+
+---
+
+Last updated: July 2025 | Version: 1.0.0
