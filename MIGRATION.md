@@ -29,18 +29,29 @@ While your old code continues to work, v1.0 offers new ways to import that can s
 // Old way - imports everything
 const emojis = require('node-emojis')
 
-// New way - import only what you need
+// New way - import only what you need (consolidated)
 const { search } = require('node-emojis/search')
-const { applySkinTone } = require('node-emojis/skin-tones')
-const { getAliases } = require('node-emojis/aliases')
+const { applySkinTone, supportsSkinTone } = require('node-emojis/skin-tones')
+const { getAliases, getPrimaryName } = require('node-emojis/aliases')
+const { 
+  isValidEmoji, 
+  isValidEmojiName, 
+  getNameFromEmoji 
+} = require('node-emojis')
 ```
 
 ### ES Module Imports
 
 ```javascript
-// ES modules with tree-shaking
+// ES modules with tree-shaking (consolidated)
 import { search } from 'node-emojis/search'
-import { applySkinTone } from 'node-emojis/skin-tones'
+import { applySkinTone, supportsSkinTone } from 'node-emojis/skin-tones'
+import { getAliases, getPrimaryName } from 'node-emojis/aliases'
+import { 
+  isValidEmoji, 
+  isValidEmojiName, 
+  getNameFromEmoji 
+} from 'node-emojis'
 ```
 
 ## 📦 Bundle Size Improvements
@@ -75,18 +86,19 @@ search('happy')
 v1.0 adds several new features that weren't available in v0.x:
 
 ```javascript
-// Filters
+// Consolidated imports for better readability
 const { filterByCategory, filterByVersion } = require('node-emojis/filters')
+const { 
+  isValidEmoji, 
+  isValidEmojiName, 
+  getNameFromEmoji 
+} = require('node-emojis')
+
+// Usage examples
 const animals = filterByCategory('animals')
 const modernEmojis = filterByVersion('10.0', 'min')
-
-// Validators (part of main export)
-const { isValidEmoji, isValidEmojiName } = require('node-emojis')
 isValidEmoji('🔥') // true
 isValidEmojiName('fire') // true
-
-// Reverse mapping utilities (part of main export)
-const { getNameFromEmoji } = require('node-emojis')
 getNameFromEmoji('🔥') // 'fire'
 ```
 
