@@ -1,7 +1,7 @@
 {
   "name": "node-emojis",
   "version": "1.0.0",
-  "description": "Emojis that you can use in your application 😊",
+  "description": "Modern, tree-shakeable emoji library for Node.js with TypeScript, search, skin tones, and aliases 🎉",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -21,7 +21,8 @@
     "lint:yaml": "yamllint .github/**/*.yml *.yml *.yaml --ignore=node_modules",
     "lint:fix": "npm run lint:ts:fix && npm run lint:md:fix",
     "test": "npm run cover",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint:check-bypass": "node scripts/check-bypass.js"
   },
   "repository": "git+https://github.com/jesselpalmer/node-emojis.git",
   "engines": {
@@ -92,7 +93,18 @@
     "typescript",
     "skin-tone",
     "aliases",
-    "search"
+    "search",
+    "tree-shaking",
+    "es-modules",
+    "commonjs",
+    "emoji-search",
+    "emoji-picker",
+    "unicode-emojis",
+    "emoji-aliases",
+    "emoji-library",
+    "nodejs",
+    "javascript",
+    "zero-dependencies"
   ],
   "author": "Jesse Palmer <jesselpalmer@gmail.com> (http://jesselpalmer.com/)",
   "license": "MIT",
@@ -101,6 +113,8 @@
   },
   "homepage": "https://github.com/jesselpalmer/node-emojis#readme",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.10",

@@ -1,0 +1,19 @@
+# <type>[optional scope]: <description>
+# 
+# [optional body]
+# 
+# [optional footer(s)]
+# 
+# Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore
+# 
+# Examples:
+# feat: add skin tone support for human emojis
+# fix(search): correct emoji lookup for aliases
+# docs: update README with tree-shaking examples
+# 
+# Remember:
+# - Use imperative mood ("add" not "added")
+# - Keep subject line under 50 characters
+# - Don't capitalize first letter
+# - Don't end with a period
+# - Reference issues in footer (e.g., Fixes #123)

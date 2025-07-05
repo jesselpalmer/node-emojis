@@ -1,1 +1,31 @@
+#!/usr/bin/env sh
+# Pre-commit hook - DO NOT BYPASS
+# Use 'git commit --no-verify' only in emergencies and document why
+
+echo "🔍 Running pre-commit checks..."
+echo "💡 Tip: Fix issues instead of using --no-verify"
+
+# Check if this is a bypass attempt
+if [ "$HUSKY_SKIP_HOOKS" = "1" ] || [ "$SKIP_HOOKS" = "1" ]; then
+  echo "⚠️  WARNING: Pre-commit hooks are being skipped!"
+  echo "⚠️  This should only be done in emergencies."
+  echo "⚠️  Please ensure you fix any issues before merging."
+  sleep 2
+fi
+
+# Run bypass check, linting, and tests
+npm run lint:check-bypass
+if [ $? -ne 0 ]; then
+  echo "❌ Pre-commit bypass check failed!"
+  echo "💡 Fix the issues above or use 'git commit --no-verify' only if absolutely necessary"
+  exit 1
+fi
+
 npm run lint && npm test
+if [ $? -ne 0 ]; then
+  echo "❌ Pre-commit checks failed!"
+  echo "💡 Fix the issues above or use 'git commit --no-verify' only if absolutely necessary"
+  exit 1
+fi
+
+echo "✅ Pre-commit checks passed!"

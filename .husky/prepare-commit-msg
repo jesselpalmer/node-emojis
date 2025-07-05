@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+# Prepare commit message hook
+
+# Check if user is trying to bypass hooks
+if [ "$2" = "" ] && [ "$3" = "" ]; then
+  # Only add warning for regular commits, not merges/rebases
+  echo "" >> "$1"
+  echo "# 🚨 REMINDER: Don't use --no-verify unless absolutely necessary" >> "$1"
+  echo "# 🛡️  Pre-commit hooks help maintain code quality" >> "$1"
+fi

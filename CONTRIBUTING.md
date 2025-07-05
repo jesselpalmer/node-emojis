@@ -97,12 +97,13 @@ node-emojis/
 - `npm run lint` - Run TypeScript, Markdown, and YAML linters
 - `npm run lint:fix` - Auto-fix linting issues where possible
 - `npm run clean` - Clean build outputs
+- `npm run lint:check-bypass` - Check for commits that may have bypassed hooks
 
 ### Testing
 
 - We use Mocha and Chai for testing
 - Tests are written in TypeScript
-- Aim for high test coverage (currently at 86%+)
+- Aim for high test coverage (minimum threshold: 85%)
 - Run tests before submitting PRs
 
 ### Code Style
@@ -115,10 +116,65 @@ node-emojis/
 
 ### Commit Messages
 
-- Use clear and meaningful commit messages
-- Start with a verb in present tense (e.g., "Add", "Fix", "Update")
-- Keep the first line under 72 characters
-- Reference issues and pull requests where applicable
+We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification for our commit messages. This leads to more readable messages that are easy to follow when looking through the project history.
+
+#### Format
+
+```text
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+#### Types
+
+- **feat**: A new feature
+- **fix**: A bug fix
+- **docs**: Documentation only changes
+- **style**: Changes that do not affect the meaning of the code (formatting, missing semicolons, etc)
+- **refactor**: A code change that neither fixes a bug nor adds a feature
+- **perf**: A code change that improves performance
+- **test**: Adding missing tests or correcting existing tests
+- **build**: Changes that affect the build system or external dependencies
+- **ci**: Changes to our CI configuration files and scripts
+- **chore**: Other changes that don't modify src or test files
+
+#### Examples
+
+```bash
+# Feature
+feat: add skin tone support for human emojis
+
+# Bug fix
+fix: correct emoji lookup for aliases
+
+# Documentation
+docs: update README with tree-shaking examples
+
+# Breaking change
+feat!: migrate to ES modules
+
+BREAKING CHANGE: The package now uses ES modules. 
+CommonJS is still supported via backward compatibility layer.
+
+# Commit with scope
+feat(search): add fuzzy search capability
+
+# Commit with issue reference
+fix: resolve duplicate emoji entries
+
+Fixes #123
+```
+
+#### Guidelines
+
+- Keep the subject line under 50 characters
+- Use the imperative mood ("add" not "added" or "adds")
+- Don't capitalize the first letter
+- Don't end with a period
+- Reference issues and PRs in the footer when applicable
 
 ### Adding New Emojis
 
@@ -132,14 +188,40 @@ node-emojis/
 
 The project uses pre-commit hooks that run:
 
-- Linting checks
-- Test suite
+- Linting checks (TypeScript, Markdown, YAML)
+- Complete test suite with coverage
 
-Make sure these pass before committing.
+**Important:** Pre-commit hooks should not be bypassed except in genuine emergencies.
+
+#### Hook Bypass Policy
+
+- ⚠️ **Avoid `git commit --no-verify`** - This skips important quality checks
+- 🛡️ **Fix issues instead** - Address linting errors and test failures properly
+- 🚨 **Emergency only** - Only bypass in critical situations (server down, urgent hotfix)
+- 📝 **Document why** - If you must bypass, document the reason in the commit message
+- 🔍 **CI detection** - Our CI will flag commits that may have bypassed hooks
+
+#### If Your Commit Fails Pre-commit Checks
+
+1. **Linting errors**: Run `npm run lint:fix` to auto-fix issues
+2. **Test failures**: Fix the code or update tests as appropriate
+3. **TypeScript errors**: Address type issues in your code
+4. **Need help**: Ask in discussions or create an issue
+
+Remember: These hooks protect code quality and save time for everyone!
 
 ## Release Process
 
-Releases are automated through GitHub Actions when a tag is pushed. Only maintainers can create releases.
+Releases are published manually by maintainers. To release a new version:
+
+1. Ensure all tests pass and coverage meets thresholds
+2. Update version in package.json
+3. Update CHANGELOG.md with release notes
+4. Commit changes: `git commit -m "chore: release v1.0.0"`
+5. Create git tag: `git tag v1.0.0`
+6. Push changes and tag: `git push && git push --tags`
+7. Publish to npm: `npm publish`
+8. Create GitHub release with changelog notes
 
 ## Questions?
 
