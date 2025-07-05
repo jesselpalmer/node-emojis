@@ -644,4 +644,4 @@ Need more advanced examples? Check our [GitHub discussions](https://github.com/j
 
 ---
 
-*Last updated: July 2025 | Version: 1.0.0*
+Last updated: July 2025 | Version: 1.0.0

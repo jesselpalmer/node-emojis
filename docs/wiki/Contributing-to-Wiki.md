@@ -9,7 +9,7 @@ Help us improve the node-emojis documentation by contributing to this wiki!
 - [Content Guidelines](#content-guidelines)
 - [Editing Pages](#editing-pages)
 - [Creating New Pages](#creating-new-pages)
-- [Review Process](#review-process)
+- [Content Ideas](#content-ideas)
 
 ---
 
@@ -18,15 +18,19 @@ Help us improve the node-emojis documentation by contributing to this wiki!
 There are several ways to contribute to the wiki:
 
 ### 1. **Report Issues**
+
 Found outdated information or broken links? [Open an issue](https://github.com/jesselpalmer/node-emojis/issues) with the label `documentation`.
 
 ### 2. **Suggest Improvements**
+
 Have ideas for new content or better organization? [Start a discussion](https://github.com/jesselpalmer/node-emojis/discussions).
 
 ### 3. **Edit Existing Pages**
+
 See a typo or want to clarify something? Edit the page directly on GitHub.
 
 ### 4. **Create New Content**
+
 Want to add a new tutorial or example? Follow our guidelines below.
 
 ---
@@ -35,7 +39,7 @@ Want to add a new tutorial or example? Follow our guidelines below.
 
 Our wiki is organized into these main sections:
 
-```
+```text
 📚 Wiki Structure
 ├── 🏠 Home.md                    # Welcome page and navigation
 ├── 🚀 Getting-Started.md         # Installation and basic usage
@@ -68,6 +72,7 @@ Our wiki is organized into these main sections:
 ### Code Examples
 
 ✅ **Good Example**:
+
 ```javascript
 const emojis = require('node-emojis')
 const { search } = require('node-emojis/search')
@@ -78,6 +83,7 @@ console.log(results[0].emoji) // 😊
 ```
 
 ❌ **Poor Example**:
+
 ```javascript
 // This won't work in v1.0
 const emoji = require('node-emojis')
@@ -157,6 +163,7 @@ git push origin docs/your-improvement
 ### Before Creating
 
 Ask yourself:
+
 - Is this information already covered elsewhere?
 - Would this be better as part of an existing page?
 - Is this specific to node-emojis or too general?
@@ -207,8 +214,9 @@ Additional content...
 
 ---
 
-*Last updated: July 2025 | Version: 1.0.0*
-```
+## Template End
+
+Last updated: July 2025 | Version: 1.0.0
 
 ### Naming Conventions
 
@@ -327,4 +335,4 @@ Need help contributing? Here's how to get support:
 
 ---
 
-*Last updated: July 2025 | Version: 1.0.0*
+Last updated: July 2025 | Version: 1.0.0
