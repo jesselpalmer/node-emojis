@@ -1,6 +1,8 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    // Note: "strict": true is inherited from the base tsconfig.json,
+    // ensuring full type safety in tests including noImplicitAny and strictNullChecks
     "module": "commonjs",
     "target": "es2018",
     "types": ["node", "mocha", "chai"],

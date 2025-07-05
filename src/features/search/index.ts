@@ -2,11 +2,19 @@ import emojis from '../../data/emojis.json'
 import metadata from '../../data/metadata.json'
 import aliases from '../../data/aliases.json'
 
+/**
+ * Represents a search result for emoji queries
+ */
 export interface SearchResult {
+  /** The canonical name of the emoji (e.g., 'fire', 'smile') */
   name: string
+  /** The actual emoji character (e.g., '🔥', '😊') */
   emoji: string
+  /** Array of keywords associated with this emoji for searching */
   keywords: string[]
+  /** The category this emoji belongs to (e.g., 'people', 'animals') */
   category: string
+  /** Relevance score (0-1) where 1.0 is exact match, 0.8 is keyword match, 0.6 is alias match */
   score?: number
 }
 
@@ -81,7 +89,35 @@ function buildSearchIndex() {
 buildSearchIndex()
 
 /**
- * Search emojis by keyword using pre-built indexes for O(1) lookups
+ * Search for emojis by keyword, name, or alias
+ * 
+ * This function uses pre-built indexes for O(1) substring matching performance.
+ * Results are scored based on match type:
+ * - Name matches: score 1.0
+ * - Keyword matches: score 0.8  
+ * - Alias matches: score 0.6
+ * 
+ * @param keyword - The search term to find emojis for
+ * @returns Array of search results sorted by relevance score (highest first)
+ * 
+ * @example
+ * ```typescript
+ * // Search by name
+ * search('fire')
+ * // Returns: [{ name: 'fire', emoji: '🔥', score: 1.0, ... }]
+ * 
+ * // Search by keyword
+ * search('happy')
+ * // Returns: [{ name: 'smile', emoji: '😊', score: 0.8, ... }, ...]
+ * 
+ * // Search by alias
+ * search('snapstreak')
+ * // Returns: [{ name: 'fire', emoji: '🔥', score: 0.6, ... }]
+ * 
+ * // Partial matches work too
+ * search('hap')
+ * // Returns emojis with names/keywords/aliases containing 'hap'
+ * ```
  */
 export function search(keyword: string): SearchResult[] {
   const searchTerm = keyword.toLowerCase()
@@ -135,7 +171,25 @@ export function search(keyword: string): SearchResult[] {
 }
 
 /**
- * Get all emojis by category
+ * Get all emojis that belong to a specific category
+ * 
+ * @param category - The category name to filter by (e.g., 'people', 'animals', 'food')
+ * @returns Array of emojis in the specified category, or empty array if category doesn't exist
+ * 
+ * @example
+ * ```typescript
+ * // Get all animal emojis
+ * getByCategory('animals')
+ * // Returns: [
+ * //   { name: 'cat', emoji: '🐈', category: 'animals', ... },
+ * //   { name: 'dog', emoji: '🐕', category: 'animals', ... },
+ * //   ...
+ * // ]
+ * 
+ * // Invalid category returns empty array
+ * getByCategory('invalid')
+ * // Returns: []
+ * ```
  */
 export function getByCategory(category: string): SearchResult[] {
   return Object.entries(emojis)
@@ -155,7 +209,15 @@ export function getByCategory(category: string): SearchResult[] {
 }
 
 /**
- * Get all available categories
+ * Get a list of all available emoji categories
+ * 
+ * @returns Sorted array of category names
+ * 
+ * @example
+ * ```typescript
+ * getCategories()
+ * // Returns: ['animals', 'food', 'nature', 'people', 'travel', ...]
+ * ```
  */
 export function getCategories(): string[] {
   const categories = new Set<string>()

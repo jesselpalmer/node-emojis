@@ -24,8 +24,12 @@ const validEmojisSet = new Set(Object.values(emojis))
  * - May not recognize very new emojis not yet in the database
  * - Complex emoji sequences with multiple components might not be fully validated
  * 
+ * Note: This function will return true for strings containing only emoji characters,
+ * including multiple emojis like '😀😀' or '🔥💧'. This is intentional as the function
+ * validates whether the string consists entirely of emoji codepoints.
+ * 
  * @param str - The string to validate
- * @returns true if the string is a valid emoji, false otherwise
+ * @returns true if the string consists only of emoji characters, false otherwise
  */
 export function isValidEmoji(str: string): boolean {
   if (!str) return false
@@ -75,6 +79,19 @@ export function sanitizeEmojiName(name: string): string {
 
 /**
  * Check if a string contains variation selector
+ * 
+ * Variation selectors (U+FE0F) are used to request an emoji presentation
+ * of characters that have both text and emoji representations.
+ * 
+ * @param str - The string to check for variation selectors
+ * @returns true if the string contains at least one variation selector, false otherwise
+ * 
+ * @example
+ * ```typescript
+ * hasVariationSelector('❤️')  // true (heart with emoji presentation)
+ * hasVariationSelector('❤')   // false (heart without variation selector)
+ * hasVariationSelector('')    // false (empty string)
+ * ```
  */
 export function hasVariationSelector(str: string): boolean {
   return str.includes('\u{FE0F}')

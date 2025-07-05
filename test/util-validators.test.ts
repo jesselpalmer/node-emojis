@@ -45,6 +45,13 @@ describe('validators utility', () => {
       expect(isValidEmoji('hello 🔥')).to.be.false
       expect(isValidEmoji('🔥 fire')).to.be.false
     })
+
+    it('should handle multi-emoji strings', () => {
+      // The current implementation treats emoji-only strings as valid
+      expect(isValidEmoji('😀😀')).to.be.true
+      expect(isValidEmoji('🔥💧')).to.be.true
+      expect(isValidEmoji('👍🏻👍🏿')).to.be.true
+    })
   })
 
   describe('isValidEmojiName function', () => {
@@ -96,6 +103,10 @@ describe('validators utility', () => {
     it('should handle complex emojis', () => {
       expect(hasVariationSelector('🏳️‍🌈')).to.be.true
       expect(hasVariationSelector('👨‍👩‍👧‍👦')).to.be.false
+    })
+
+    it('should return false for empty strings', () => {
+      expect(hasVariationSelector('')).to.be.false
     })
   })
 

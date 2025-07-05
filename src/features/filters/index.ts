@@ -2,16 +2,45 @@ import emojis from '../../data/emojis.json'
 import metadata from '../../data/metadata.json'
 import categories from '../../data/categories.json'
 
+/**
+ * Complete information about an emoji including metadata
+ */
 export interface EmojiInfo {
+  /** The canonical name of the emoji */
   name: string
+  /** The emoji character */
   emoji: string
+  /** The category this emoji belongs to */
   category: string
+  /** Array of keywords for searching */
   keywords: string[]
+  /** The Unicode version when this emoji was introduced */
   unicodeVersion: string
 }
 
 /**
  * Filter emojis by category
+ * 
+ * Returns all emojis that belong to a specific category.
+ * Categories are predefined groups like 'people', 'animals', 'food', etc.
+ * 
+ * @param category - The category name to filter by
+ * @returns Array of emoji info objects for the specified category
+ * 
+ * @example
+ * ```typescript
+ * // Get all people emojis
+ * filterByCategory('people')
+ * // Returns: [
+ * //   { name: 'smile', emoji: '😊', category: 'people', ... },
+ * //   { name: 'laugh', emoji: '😂', category: 'people', ... },
+ * //   ...
+ * // ]
+ * 
+ * // Invalid category returns empty array
+ * filterByCategory('invalid' as any)
+ * // Returns: []
+ * ```
  */
 export function filterByCategory(category: keyof typeof categories): EmojiInfo[] {
   const emojiNames = categories[category] || []
@@ -30,6 +59,31 @@ export function filterByCategory(category: keyof typeof categories): EmojiInfo[]
 
 /**
  * Filter emojis by Unicode version
+ * 
+ * Find emojis based on when they were introduced in the Unicode standard.
+ * Useful for ensuring compatibility with older systems.
+ * 
+ * @param version - The Unicode version to filter by (e.g., '13.0', '15.0')
+ * @param comparison - How to compare versions:
+ *   - 'exact': Only emojis from this exact version
+ *   - 'min': Emojis from this version or newer (default)
+ *   - 'max': Emojis from this version or older
+ * @returns Array of emoji info objects matching the version criteria
+ * 
+ * @example
+ * ```typescript
+ * // Get emojis introduced in Unicode 13.0
+ * filterByVersion('13.0', 'exact')
+ * // Returns: [{ name: 'ninja', emoji: '🥷', unicodeVersion: '13.0', ... }]
+ * 
+ * // Get all emojis available in Unicode 12.0 or earlier
+ * filterByVersion('12.0', 'max')
+ * // Returns: All emojis with unicodeVersion <= '12.0'
+ * 
+ * // Get modern emojis (13.0+)
+ * filterByVersion('13.0', 'min')
+ * // Returns: All emojis with unicodeVersion >= '13.0'
+ * ```
  */
 export function filterByVersion(version: string, comparison: 'exact' | 'min' | 'max' = 'min'): EmojiInfo[] {
   const results: EmojiInfo[] = []
@@ -67,6 +121,28 @@ export function filterByVersion(version: string, comparison: 'exact' | 'min' | '
 
 /**
  * Filter emojis by keyword
+ * 
+ * Find emojis that have a specific keyword in their metadata.
+ * Keywords are descriptive terms associated with each emoji for searching.
+ * 
+ * @param keyword - The keyword to search for
+ * @param exact - If true, requires exact keyword match. If false, allows partial matches (default)
+ * @returns Array of emoji info objects with matching keywords
+ * 
+ * @example
+ * ```typescript
+ * // Find emojis with 'happy' keyword (partial match)
+ * filterByKeyword('happy')
+ * // Returns: Emojis with keywords containing 'happy'
+ * 
+ * // Find emojis with exact 'love' keyword
+ * filterByKeyword('love', true)
+ * // Returns: Only emojis with exact keyword 'love', not 'lovely' or 'glove'
+ * 
+ * // Case-insensitive search
+ * filterByKeyword('HAPPY')
+ * // Returns: Same as filterByKeyword('happy')
+ * ```
  */
 export function filterByKeyword(keyword: string, exact = false): EmojiInfo[] {
   const searchTerm = keyword.toLowerCase()
@@ -96,6 +172,24 @@ export function filterByKeyword(keyword: string, exact = false): EmojiInfo[] {
 
 /**
  * Get all available Unicode versions
+ * 
+ * Returns a list of all Unicode versions that have emojis in the dataset,
+ * sorted from oldest to newest.
+ * 
+ * @returns Sorted array of Unicode version strings
+ * 
+ * @example
+ * ```typescript
+ * getUnicodeVersions()
+ * // Returns: ['1.0', '3.0', '6.0', '11.0', '12.0', '13.0', '14.0', '15.0']
+ * 
+ * // Use with filterByVersion to get emojis per version
+ * const versions = getUnicodeVersions()
+ * versions.forEach(v => {
+ *   const emojis = filterByVersion(v, 'exact')
+ *   console.log(`Unicode ${v}: ${emojis.length} emojis`)
+ * })
+ * ```
  */
 export function getUnicodeVersions(): string[] {
   const versions = new Set<string>()
