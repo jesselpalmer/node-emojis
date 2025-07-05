@@ -13,9 +13,15 @@ if [ "$HUSKY_SKIP_HOOKS" = "1" ] || [ "$SKIP_HOOKS" = "1" ]; then
   sleep 2
 fi
 
-# Run linting and tests
-npm run lint && npm test
+# Run bypass check, linting, and tests
+npm run lint:check-bypass
+if [ $? -ne 0 ]; then
+  echo "❌ Pre-commit bypass check failed!"
+  echo "💡 Fix the issues above or use 'git commit --no-verify' only if absolutely necessary"
+  exit 1
+fi
 
+npm run lint && npm test
 if [ $? -ne 0 ]; then
   echo "❌ Pre-commit checks failed!"
   echo "💡 Fix the issues above or use 'git commit --no-verify' only if absolutely necessary"
