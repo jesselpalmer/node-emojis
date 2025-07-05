@@ -58,6 +58,22 @@ interface EmojisMain {
   SKIN_TONES: any
 }
 
+// Helper function to define non-enumerable properties
+function defineGetter(obj: any, name: string, getter: () => any) {
+  Object.defineProperty(obj, name, {
+    get: getter,
+    enumerable: false
+  })
+}
+
+// Helper function to define non-enumerable methods
+function defineMethod(obj: any, name: string, method: (...args: any[]) => any) {
+  Object.defineProperty(obj, name, {
+    value: method,
+    enumerable: false
+  })
+}
+
 // Create default export with backward compatibility
 const emojis: EmojisMain = {} as EmojisMain
 
@@ -65,193 +81,133 @@ const emojis: EmojisMain = {} as EmojisMain
 Object.assign(emojis, emojiData)
 
 // Add getters for backward compatibility
-Object.defineProperty(emojis, 'metadata', {
-  get: () => metadataData,
-  enumerable: false
-})
+defineGetter(emojis, 'metadata', () => metadataData)
 
-Object.defineProperty(emojis, 'categories', {
-  get: () => {
-    // Convert categories from arrays of names to objects of emojis
-    const categoryObjects: any = {}
-    Object.entries(categoriesData).forEach(([category, names]) => {
-      categoryObjects[category] = {}
-      names.forEach((name: string) => {
-        if (emojiData[name as keyof typeof emojiData]) {
-          categoryObjects[category][name] = emojiData[name as keyof typeof emojiData]
-        }
-      })
+defineGetter(emojis, 'categories', () => {
+  // Convert categories from arrays of names to objects of emojis
+  const categoryObjects: any = {}
+  Object.entries(categoriesData).forEach(([category, names]) => {
+    categoryObjects[category] = {}
+    names.forEach((name: string) => {
+      if (emojiData[name as keyof typeof emojiData]) {
+        categoryObjects[category][name] = emojiData[name as keyof typeof emojiData]
+      }
     })
-    return categoryObjects
-  },
-  enumerable: false
+  })
+  return categoryObjects
 })
 
 // For backward compatibility - add reverse mapping
 let cachedReverseMapping: Record<string, string> | null = null
-Object.defineProperty(emojis, 'emojiToName', {
-  get: () => {
-    if (!cachedReverseMapping) {
-      cachedReverseMapping = {}
-      Object.entries(emojiData).forEach(([name, emoji]) => {
-        cachedReverseMapping![emoji as string] = name
-      })
-    }
-    return cachedReverseMapping
-  },
-  enumerable: false
+defineGetter(emojis, 'emojiToName', () => {
+  if (!cachedReverseMapping) {
+    cachedReverseMapping = {}
+    Object.entries(emojiData).forEach(([name, emoji]) => {
+      cachedReverseMapping![emoji as string] = name
+    })
+  }
+  return cachedReverseMapping
 })
 
-Object.defineProperty(emojis, 'reverseMapping', {
-  get: () => emojis.emojiToName,
-  enumerable: false
-})
+defineGetter(emojis, 'reverseMapping', () => emojis.emojiToName)
 
 // Add backward compatibility methods
-Object.defineProperty(emojis, 'searchByKeyword', {
-  value: (keyword: string) => {
-    // Transform results for backward compatibility
-    return searchFunction(keyword).map((result: any) => ({
-      name: result.name,
-      emoji: result.emoji,
-      metadata: {
-        keywords: result.keywords,
-        category: result.category,
-        unicodeVersion: metadataData[result.name as keyof typeof metadataData]?.unicodeVersion || '1.0'
-      }
-    }))
-  },
-  enumerable: false
+defineMethod(emojis, 'searchByKeyword', (keyword: string) => {
+  // Transform results for backward compatibility
+  return searchFunction(keyword).map((result: any) => ({
+    name: result.name,
+    emoji: result.emoji,
+    metadata: {
+      keywords: result.keywords,
+      category: result.category,
+      unicodeVersion: metadataData[result.name as keyof typeof metadataData]?.unicodeVersion || '1.0'
+    }
+  }))
 })
 
-Object.defineProperty(emojis, 'getByCategory', {
-  value: (category: string) => {
-    // Transform results for backward compatibility
-    return getByCategoryFunction(category).map((result: any) => ({
-      name: result.name,
-      emoji: result.emoji,
-      metadata: {
-        keywords: result.keywords,
-        category: result.category,
-        unicodeVersion: metadataData[result.name as keyof typeof metadataData]?.unicodeVersion || '1.0'
-      }
-    }))
-  },
-  enumerable: false
+defineMethod(emojis, 'getByCategory', (category: string) => {
+  // Transform results for backward compatibility
+  return getByCategoryFunction(category).map((result: any) => ({
+    name: result.name,
+    emoji: result.emoji,
+    metadata: {
+      keywords: result.keywords,
+      category: result.category,
+      unicodeVersion: metadataData[result.name as keyof typeof metadataData]?.unicodeVersion || '1.0'
+    }
+  }))
 })
 
-Object.defineProperty(emojis, 'getAllNames', {
-  value: () => Object.keys(emojiData),
-  enumerable: false
-})
+defineMethod(emojis, 'getAllNames', () => Object.keys(emojiData))
 
 // Skin tone methods
-Object.defineProperty(emojis, 'applySkinTone', {
-  value: (emoji: string, tone: any) => {
-    return applySkinToneFunction(emoji, tone)
-  },
-  enumerable: false
+defineMethod(emojis, 'applySkinTone', (emoji: string, tone: any) => {
+  return applySkinToneFunction(emoji, tone)
 })
 
-Object.defineProperty(emojis, 'supportsSkinTone', {
-  value: (nameOrEmoji: string) => {
-    return supportsSkinToneFunction(nameOrEmoji)
-  },
-  enumerable: false
+defineMethod(emojis, 'supportsSkinTone', (nameOrEmoji: string) => {
+  return supportsSkinToneFunction(nameOrEmoji)
 })
 
-Object.defineProperty(emojis, 'getAllSkinToneVariations', {
-  value: (emoji: string) => {
-    return getAllSkinToneVariationsFunction(emoji)
-  },
-  enumerable: false
+defineMethod(emojis, 'getAllSkinToneVariations', (emoji: string) => {
+  return getAllSkinToneVariationsFunction(emoji)
 })
 
-Object.defineProperty(emojis, 'removeSkinTone', {
-  value: (emoji: string) => {
-    return removeSkinToneFunction(emoji)
-  },
-  enumerable: false
+defineMethod(emojis, 'removeSkinTone', (emoji: string) => {
+  return removeSkinToneFunction(emoji)
 })
 
 // Alias methods
-Object.defineProperty(emojis, 'aliases', {
-  get: () => aliasData,
-  enumerable: false
+defineGetter(emojis, 'aliases', () => aliasData)
+
+defineMethod(emojis, 'getAliases', (name: string) => {
+  return getAliasesFunction(name)
 })
 
-Object.defineProperty(emojis, 'getAliases', {
-  value: (name: string) => {
-    return getAliasesFunction(name)
-  },
-  enumerable: false
+defineMethod(emojis, 'getPrimaryName', (name: string) => {
+  return getPrimaryNameFunction(name)
 })
 
-Object.defineProperty(emojis, 'getPrimaryName', {
-  value: (name: string) => {
-    return getPrimaryNameFunction(name)
-  },
-  enumerable: false
+defineMethod(emojis, 'isSameEmoji', (name1: string, name2: string) => {
+  return isSameEmojiFunction(name1, name2)
 })
 
-Object.defineProperty(emojis, 'isSameEmoji', {
-  value: (name1: string, name2: string) => {
-    return isSameEmojiFunction(name1, name2)
-  },
-  enumerable: false
-})
-
-Object.defineProperty(emojis, 'getAllNamesForEmoji', {
-  value: (name: string) => {
-    return getAllNamesFunction(name)
-  },
-  enumerable: false
+defineMethod(emojis, 'getAllNamesForEmoji', (name: string) => {
+  return getAllNamesFunction(name)
 })
 
 // Add skin tone data for backward compatibility
-Object.defineProperty(emojis, 'skinTones', {
-  get: () => {
-    const modifiers = skinToneData.modifiers
-    return {
-      // Numeric aliases
-      '1': modifiers.light,
-      '2': modifiers['medium-light'],
-      '3': modifiers.medium,
-      '4': modifiers['medium-dark'],
-      '5': modifiers.dark,
-      // Named versions
-      light: modifiers.light,
-      'medium-light': modifiers['medium-light'],
-      medium: modifiers.medium,
-      'medium-dark': modifiers['medium-dark'],
-      dark: modifiers.dark
-    }
-  },
-  enumerable: false
+defineGetter(emojis, 'skinTones', () => {
+  const modifiers = skinToneData.modifiers
+  return {
+    // Numeric aliases
+    '1': modifiers.light,
+    '2': modifiers['medium-light'],
+    '3': modifiers.medium,
+    '4': modifiers['medium-dark'],
+    '5': modifiers.dark,
+    // Named versions
+    light: modifiers.light,
+    'medium-light': modifiers['medium-light'],
+    medium: modifiers.medium,
+    'medium-dark': modifiers['medium-dark'],
+    dark: modifiers.dark
+  }
 })
 
 // Add skin tone constants - camelCase for backward compatibility
-Object.defineProperty(emojis, 'skinToneModifiers', {
-  get: () => skinToneData.modifiers,
-  enumerable: false
-})
+defineGetter(emojis, 'skinToneModifiers', () => skinToneData.modifiers)
 
 // Add skin tone constants - original uppercase
-Object.defineProperty(emojis, 'SKIN_TONE_MODIFIERS', {
-  get: () => skinToneData.modifiers,
-  enumerable: false
-})
+defineGetter(emojis, 'SKIN_TONE_MODIFIERS', () => skinToneData.modifiers)
 
-Object.defineProperty(emojis, 'SKIN_TONES', {
-  get: () => ({
-    '1': 'light',
-    '2': 'medium-light',
-    '3': 'medium',
-    '4': 'medium-dark',
-    '5': 'dark'
-  }),
-  enumerable: false
-})
+defineGetter(emojis, 'SKIN_TONES', () => ({
+  '1': 'light',
+  '2': 'medium-light',
+  '3': 'medium',
+  '4': 'medium-dark',
+  '5': 'dark'
+}))
 
 // Support alias access
 Object.entries(aliasData).forEach(([primary, aliases]) => {

@@ -18,7 +18,7 @@ export function getNameFromEmoji(emoji: string): string | undefined {
  * Get the complete reverse mapping
  */
 export function getReverseMapping(): Readonly<Record<string, string>> {
-  return reverseMap
+  return Object.freeze({ ...reverseMap })
 }
 
 /**

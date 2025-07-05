@@ -1,5 +1,10 @@
 import { expect } from 'chai'
-import { createReverseMapping } from '../lib/utils/reverse-mapping'
+import { 
+  createReverseMapping, 
+  getNameFromEmoji, 
+  isKnownEmoji,
+  getReverseMapping 
+} from '../lib/utils/reverse-mapping'
 
 describe('reverse-mapping utility', () => {
   describe('createReverseMapping function', () => {
@@ -63,6 +68,73 @@ describe('reverse-mapping utility', () => {
       // Should create new objects each time
       expect(reverse1).to.not.equal(reverse2)
       expect(reverse1).to.deep.equal(reverse2)
+    })
+  })
+
+  describe('getNameFromEmoji function', () => {
+    it('should get emoji name from valid emoji', () => {
+      // Note: when multiple names map to the same emoji, the last one in the data wins
+      expect(getNameFromEmoji('🔥')).to.be.oneOf(['fire', 'flame', 'hot', 'lit', 'snapstreak'])
+      expect(getNameFromEmoji('🐈')).to.be.oneOf(['cat', 'domestic_cat', 'domesticcat', 'feline', 'housecat'])
+      expect(getNameFromEmoji('😀')).to.be.oneOf(['grinning', 'grinning_face'])
+    })
+
+    it('should return undefined for unknown emoji', () => {
+      expect(getNameFromEmoji('🦖')).to.be.undefined
+      expect(getNameFromEmoji('not_an_emoji')).to.be.undefined
+      expect(getNameFromEmoji('')).to.be.undefined
+    })
+
+    it('should work with emojis that have variation selectors', () => {
+      // Some emojis have variation selectors, test both forms
+      const heartName = getNameFromEmoji('❤️')
+      const plainHeartName = getNameFromEmoji('❤')
+      
+      // At least one should work
+      expect(heartName || plainHeartName).to.exist
+    })
+  })
+
+  describe('isKnownEmoji function', () => {
+    it('should return true for known emojis', () => {
+      expect(isKnownEmoji('🔥')).to.be.true
+      expect(isKnownEmoji('🐈')).to.be.true
+      expect(isKnownEmoji('😀')).to.be.true
+    })
+
+    it('should return false for unknown emojis', () => {
+      expect(isKnownEmoji('🦖')).to.be.false
+      expect(isKnownEmoji('not_an_emoji')).to.be.false
+      expect(isKnownEmoji('')).to.be.false
+    })
+  })
+
+  describe('getReverseMapping function', () => {
+    it('should return the complete reverse mapping', () => {
+      const mapping = getReverseMapping()
+      
+      expect(mapping).to.be.an('object')
+      expect(Object.keys(mapping).length).to.be.greaterThan(100) // Should have many emojis
+      
+      // Check some known mappings
+      expect(mapping['🔥']).to.be.oneOf(['fire', 'flame', 'hot', 'lit', 'snapstreak'])
+      expect(mapping['🐈']).to.be.oneOf(['cat', 'domestic_cat', 'domesticcat', 'feline', 'housecat'])
+    })
+
+    it('should return a frozen object to prevent mutations', () => {
+      const mapping = getReverseMapping()
+      
+      expect(() => {
+        (mapping as any)['🔥'] = 'modified'
+      }).to.throw()
+    })
+
+    it('should return a new object each time', () => {
+      const mapping1 = getReverseMapping()
+      const mapping2 = getReverseMapping()
+      
+      expect(mapping1).to.not.equal(mapping2)
+      expect(mapping1).to.deep.equal(mapping2)
     })
   })
 })

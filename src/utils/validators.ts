@@ -1,14 +1,17 @@
 import emojis from '../data/emojis.json'
 import { SkinTone, SkinToneAlias } from '../features/skin-tones'
 
+// Create a Set for O(1) emoji lookups
+const validEmojisSet = new Set(Object.values(emojis))
+
 /**
  * Check if a string is a valid emoji character
  */
 export function isValidEmoji(str: string): boolean {
   if (!str) return false
   
-  // Check against known emojis first (most reliable)
-  if (Object.values(emojis).includes(str as any)) {
+  // Check against known emojis first (most reliable) - O(1) lookup
+  if (validEmojisSet.has(str as any)) {
     return true
   }
   
