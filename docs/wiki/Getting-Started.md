@@ -200,6 +200,7 @@ Now that you have node-emojis installed and working:
 ### Emojis Not Displaying
 
 If emojis appear as boxes or question marks:
+
 - Ensure your terminal supports Unicode
 - Check your system fonts include emoji support
 - Try a different terminal emulator
@@ -207,6 +208,7 @@ If emojis appear as boxes or question marks:
 ### Module Not Found
 
 If you get module resolution errors:
+
 - Verify node-emojis is installed: `npm list node-emojis`
 - Check your Node.js version: `node --version` (requires 20.0.0+)
 - Clear npm cache: `npm cache clean --force`
@@ -214,6 +216,7 @@ If you get module resolution errors:
 ### TypeScript Errors
 
 If TypeScript can't find types:
+
 - Ensure TypeScript 5.0+ is installed
 - Check `moduleResolution` in tsconfig.json
 - Try restarting your TypeScript server

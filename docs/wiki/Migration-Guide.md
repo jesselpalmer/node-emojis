@@ -7,7 +7,7 @@ This guide helps you migrate from node-emojis v0.x to v1.0 and from other emoji 
 - [Migrating from v0.x to v1.0](#migrating-from-v0x-to-v10)
 - [Migrating from Other Libraries](#migrating-from-other-libraries)
 - [Breaking Changes](#breaking-changes)
-- [New Features](#new-features)
+- [Migration Examples](#migration-examples)
 - [Step-by-Step Migration](#step-by-step-migration)
 
 ---
@@ -57,6 +57,7 @@ nvm use 20
 ### 2. Import Structure Changes
 
 **v0.x**:
+
 ```javascript
 // Old way (still works in v1.0)
 const emoji = require('node-emojis')
@@ -64,6 +65,7 @@ console.log(emoji.get('fire'))  // 🔥
 ```
 
 **v1.0** (recommended):
+
 ```javascript
 // New way - direct access
 const emojis = require('node-emojis')
@@ -76,6 +78,7 @@ const { search } = require('node-emojis/search')
 ### 3. API Method Changes
 
 **v0.x**:
+
 ```javascript
 const emoji = require('node-emojis')
 
@@ -87,6 +90,7 @@ emoji.all()               // ❌ Removed
 ```
 
 **v1.0**:
+
 ```javascript
 const emojis = require('node-emojis')
 const { search } = require('node-emojis/search')
@@ -99,6 +103,7 @@ search('happy')            // ✅ Enhanced search
 ### 4. Search Functionality
 
 **v0.x**:
+
 ```javascript
 const emoji = require('node-emojis')
 
@@ -108,6 +113,7 @@ const results = emoji.find('happy')
 ```
 
 **v1.0**:
+
 ```javascript
 const { search } = require('node-emojis/search')
 
@@ -126,6 +132,7 @@ const results = search('happy')
 ### Basic Emoji Access
 
 **Before (v0.x)**:
+
 ```javascript
 const emoji = require('node-emojis')
 
@@ -135,6 +142,7 @@ console.log(emoji.get(':smile:'))  // 😄
 ```
 
 **After (v1.0)**:
+
 ```javascript
 const emojis = require('node-emojis')
 
@@ -146,6 +154,7 @@ console.log(emojis.smile)   // 😄
 ### Search Migration
 
 **Before (v0.x)**:
+
 ```javascript
 const emoji = require('node-emojis')
 
@@ -154,6 +163,7 @@ const results = emoji.find('cat')
 ```
 
 **After (v1.0)**:
+
 ```javascript
 const { search } = require('node-emojis/search')
 
@@ -167,6 +177,7 @@ results.forEach(({ name, emoji, category, keywords }) => {
 ### TypeScript Migration
 
 **Before (v0.x)**:
+
 ```typescript
 import * as emoji from 'node-emojis'
 
@@ -175,6 +186,7 @@ const fire: string = emoji.get('fire')
 ```
 
 **After (v1.0)**:
+
 ```typescript
 import emojis from 'node-emojis'
 import { search, SearchResult } from 'node-emojis/search'
@@ -193,6 +205,7 @@ const tone: SkinTone = 'medium-dark'
 ### From `node-emoji`
 
 **node-emoji**:
+
 ```javascript
 const emoji = require('node-emoji')
 
@@ -204,6 +217,7 @@ emoji.emojify(':coffee:')     // ☕
 ```
 
 **node-emojis v1.0**:
+
 ```javascript
 const emojis = require('node-emojis')
 const { search, getByCategory } = require('node-emojis/search')
@@ -218,6 +232,7 @@ emojis.coffee                 // Direct access (no colons needed)
 ### From `emoji-js`
 
 **emoji-js**:
+
 ```javascript
 const EmojiConvertor = require('emoji-js')
 const emoji = new EmojiConvertor()
@@ -227,6 +242,7 @@ emoji.replace_unified('1F604')      // 😄
 ```
 
 **node-emojis v1.0**:
+
 ```javascript
 const emojis = require('node-emojis')
 
@@ -237,6 +253,7 @@ emojis.smile                        // 😄
 ### From `twemoji`
 
 **twemoji**:
+
 ```javascript
 const twemoji = require('twemoji')
 
@@ -244,6 +261,7 @@ twemoji.parse('I ❤️ emoji!')  // HTML with images
 ```
 
 **node-emojis v1.0**:
+
 ```javascript
 const emojis = require('node-emojis')
 
@@ -373,6 +391,7 @@ function migrateFile(filePath) {
 ### Step 3: Update Code Patterns
 
 **Old pattern**:
+
 ```javascript
 const emoji = require('node-emojis')
 
@@ -386,6 +405,7 @@ function searchEmojis(term) {
 ```
 
 **New pattern**:
+
 ```javascript
 const emojis = require('node-emojis')
 const { search } = require('node-emojis/search')
@@ -466,4 +486,4 @@ If you encounter issues during migration:
 
 ---
 
-*Last updated: July 2025 | Version: 1.0.0*
+Last updated: July 2025 | Version: 1.0.0

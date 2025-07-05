@@ -61,12 +61,15 @@ const { search, getByCategory, getCategories } = require('node-emojis/search')
 Search for emojis by keyword, name, or alias.
 
 **Parameters:**
+
 - `keyword` - The search term (case-insensitive)
 
 **Returns:**
+
 - Array of `SearchResult` objects sorted by relevance
 
 **SearchResult Type:**
+
 ```typescript
 interface SearchResult {
   name: string      // Canonical emoji name
@@ -78,6 +81,7 @@ interface SearchResult {
 ```
 
 **Example:**
+
 ```javascript
 const results = search('happy')
 // Returns emojis with 'happy' in name, keywords, or aliases
@@ -88,12 +92,15 @@ const results = search('happy')
 Get all emojis in a specific category.
 
 **Parameters:**
+
 - `category` - Category name (e.g., 'people', 'animals', 'food')
 
 **Returns:**
+
 - Array of emojis in the category
 
 **Example:**
+
 ```javascript
 const animals = getByCategory('animals')
 // Returns all animal emojis
@@ -104,9 +111,11 @@ const animals = getByCategory('animals')
 Get all available category names.
 
 **Returns:**
+
 - Sorted array of category names
 
 **Example:**
+
 ```javascript
 const categories = getCategories()
 // Returns: ['animals', 'food', 'nature', 'people', 'travel', ...]
@@ -144,13 +153,16 @@ type SkinToneAlias = '1' | '2' | '3' | '4' | '5'
 Apply a skin tone modifier to an emoji.
 
 **Parameters:**
+
 - `emoji` - The emoji character
 - `tone` - Skin tone name or numeric alias (1-5)
 
 **Returns:**
+
 - Emoji with skin tone applied
 
 **Example:**
+
 ```javascript
 applySkinTone('👋', 'dark')        // 👋🏿
 applySkinTone('👋', '3')           // 👋🏽 (medium)
@@ -161,12 +173,15 @@ applySkinTone('👋', '3')           // 👋🏽 (medium)
 Check if an emoji supports skin tone modifiers.
 
 **Parameters:**
+
 - `nameOrEmoji` - Emoji name or character
 
 **Returns:**
+
 - `true` if skin tones are supported
 
 **Example:**
+
 ```javascript
 supportsSkinTone('wave')           // true
 supportsSkinTone('🔥')             // false
@@ -177,9 +192,11 @@ supportsSkinTone('🔥')             // false
 Get all skin tone variations of an emoji.
 
 **Returns:**
+
 - Object with all variations including default
 
 **Example:**
+
 ```javascript
 getAllSkinToneVariations('👋')
 // Returns: {
@@ -197,6 +214,7 @@ getAllSkinToneVariations('👋')
 Remove skin tone modifiers from an emoji.
 
 **Example:**
+
 ```javascript
 removeSkinTone('👋🏿')             // 👋
 ```
@@ -228,9 +246,11 @@ const {
 Get all aliases for an emoji.
 
 **Returns:**
+
 - Array of aliases (excluding the input name)
 
 **Example:**
+
 ```javascript
 getAliases('smile')                // ['happy', 'joy', 'pleased']
 getAliases('happy')                // ['smile', 'joy', 'pleased']
@@ -241,6 +261,7 @@ getAliases('happy')                // ['smile', 'joy', 'pleased']
 Get the primary name for an emoji (resolves aliases).
 
 **Example:**
+
 ```javascript
 getPrimaryName('happy')            // 'smile'
 getPrimaryName('smile')            // 'smile'
@@ -251,6 +272,7 @@ getPrimaryName('smile')            // 'smile'
 Check if two names refer to the same emoji.
 
 **Example:**
+
 ```javascript
 isSameEmoji('smile', 'happy')      // true
 isSameEmoji('smile', 'fire')       // false
@@ -261,6 +283,7 @@ isSameEmoji('smile', 'fire')       // false
 Get all names (primary + aliases) for an emoji.
 
 **Example:**
+
 ```javascript
 getAllNames('smile')               // ['smile', 'happy', 'joy', 'pleased']
 ```
@@ -270,6 +293,7 @@ getAllNames('smile')               // ['smile', 'happy', 'joy', 'pleased']
 Get emoji character from name or alias.
 
 **Example:**
+
 ```javascript
 resolveEmoji('fire')               // '🔥'
 resolveEmoji('flame')              // '🔥' (via alias)
@@ -298,6 +322,7 @@ const {
 Filter emojis by category.
 
 **Example:**
+
 ```javascript
 const animals = filterByCategory('animals')
 // Returns all animal emojis
@@ -308,10 +333,12 @@ const animals = filterByCategory('animals')
 Filter emojis by Unicode version.
 
 **Parameters:**
+
 - `version` - Unicode version (e.g., '12.0')
 - `comparison` - How to compare versions (default: 'min')
 
 **Example:**
+
 ```javascript
 filterByVersion('12.0', 'min')     // Emojis from Unicode 12.0+
 filterByVersion('1.0', 'exact')    // Only Unicode 1.0 emojis
@@ -322,6 +349,7 @@ filterByVersion('1.0', 'exact')    // Only Unicode 1.0 emojis
 Filter emojis containing a keyword.
 
 **Example:**
+
 ```javascript
 filterByKeyword('heart')           // All emojis with 'heart' in keywords
 ```
@@ -352,6 +380,7 @@ const {
 Check if a string is a valid emoji.
 
 **Example:**
+
 ```javascript
 isValidEmoji('🔥')                 // true
 isValidEmoji('hello')              // false
@@ -363,6 +392,7 @@ isValidEmoji('👋🏻')               // true
 Check if a string is a valid emoji name.
 
 **Example:**
+
 ```javascript
 isValidEmojiName('fire')           // true
 isValidEmojiName('hello world')    // false (spaces not allowed)
@@ -374,6 +404,7 @@ isValidEmojiName('thumbs-up')      // true (hyphens allowed)
 Check if an emoji contains variation selectors.
 
 **Example:**
+
 ```javascript
 hasVariationSelector('☀️')         // true
 hasVariationSelector('🔥')         // false
@@ -384,6 +415,7 @@ hasVariationSelector('🔥')         // false
 Remove variation selectors from emoji.
 
 **Example:**
+
 ```javascript
 stripVariationSelectors('☀️')      // '☀'
 ```
@@ -393,6 +425,7 @@ stripVariationSelectors('☀️')      // '☀'
 Convert a string to a valid emoji name format.
 
 **Example:**
+
 ```javascript
 sanitizeEmojiName('Hello World!')   // 'hello_world_'
 sanitizeEmojiName('thumbs up')      // 'thumbs_up'
@@ -422,6 +455,7 @@ const {
 Get the name of an emoji from its character.
 
 **Example:**
+
 ```javascript
 getNameFromEmoji('🔥')             // 'fire'
 getNameFromEmoji('👋')             // 'wave'
@@ -433,6 +467,7 @@ getNameFromEmoji('❓')             // undefined (if not in database)
 Check if an emoji is in the database.
 
 **Example:**
+
 ```javascript
 isKnownEmoji('🔥')                 // true
 isKnownEmoji('🦖')                 // true/false depending on version
@@ -443,9 +478,11 @@ isKnownEmoji('🦖')                 // true/false depending on version
 Get the complete reverse mapping object.
 
 **Returns:**
+
 - Frozen object mapping emojis to names
 
 **Example:**
+
 ```javascript
 const mapping = getReverseMapping()
 console.log(mapping['🔥'])         // 'fire'

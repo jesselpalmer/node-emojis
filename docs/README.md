@@ -48,4 +48,4 @@ Want to improve our documentation?
 
 ---
 
-*Documentation last updated: July 2025 | Version: 1.0.0*
+Documentation last updated: July 2025 | Version: 1.0.0

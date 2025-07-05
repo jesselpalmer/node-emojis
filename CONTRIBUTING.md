@@ -97,6 +97,7 @@ node-emojis/
 - `npm run lint` - Run TypeScript, Markdown, and YAML linters
 - `npm run lint:fix` - Auto-fix linting issues where possible
 - `npm run clean` - Clean build outputs
+- `npm run check-bypass` - Check for commits that may have bypassed hooks
 
 ### Testing
 
@@ -187,10 +188,27 @@ Fixes #123
 
 The project uses pre-commit hooks that run:
 
-- Linting checks
-- Test suite
+- Linting checks (TypeScript, Markdown, YAML)
+- Complete test suite with coverage
 
-Make sure these pass before committing.
+**Important:** Pre-commit hooks should not be bypassed except in genuine emergencies.
+
+#### Hook Bypass Policy
+
+- ⚠️ **Avoid `git commit --no-verify`** - This skips important quality checks
+- 🛡️ **Fix issues instead** - Address linting errors and test failures properly
+- 🚨 **Emergency only** - Only bypass in critical situations (server down, urgent hotfix)
+- 📝 **Document why** - If you must bypass, document the reason in the commit message
+- 🔍 **CI detection** - Our CI will flag commits that may have bypassed hooks
+
+#### If Your Commit Fails Pre-commit Checks
+
+1. **Linting errors**: Run `npm run lint:fix` to auto-fix issues
+2. **Test failures**: Fix the code or update tests as appropriate
+3. **TypeScript errors**: Address type issues in your code
+4. **Need help**: Ask in discussions or create an issue
+
+Remember: These hooks protect code quality and save time for everyone!
 
 ## Release Process
 

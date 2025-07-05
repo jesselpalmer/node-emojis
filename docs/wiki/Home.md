@@ -45,4 +45,4 @@ MIT © Jesse Palmer
 
 ---
 
-*Last updated: July 2025 | Version: 1.0.0*
+Last updated: July 2025 | Version: 1.0.0

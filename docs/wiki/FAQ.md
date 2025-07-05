@@ -16,6 +16,7 @@
 ### What is node-emojis?
 
 node-emojis is a modern, tree-shakeable emoji library for Node.js that provides:
+
 - 360+ Unicode emojis (v1.0 to v15.0)
 - TypeScript support with full type definitions
 - Smart search functionality
@@ -26,6 +27,7 @@ node-emojis is a modern, tree-shakeable emoji library for Node.js that provides:
 ### How is node-emojis different from other emoji libraries?
 
 Key differences:
+
 - **Tree-shakeable**: Import only what you need, reducing bundle size
 - **Zero dependencies**: No external runtime dependencies
 - **TypeScript-first**: Written in TypeScript with comprehensive types
@@ -36,6 +38,7 @@ Key differences:
 ### Is node-emojis suitable for production use?
 
 Yes! node-emojis is production-ready with:
+
 - 85%+ test coverage
 - Semantic versioning
 - Security policy
@@ -55,6 +58,7 @@ Yes! node-emojis is production-ready with:
 ### Why does node-emojis require Node.js 20+?
 
 Node.js 20+ provides:
+
 - Better ES module support
 - Improved performance
 - Enhanced TypeScript integration
@@ -111,6 +115,7 @@ const allNames = getAllNames('smile') // ['smile', 'happy', 'joy', 'pleased']
 ### Can I add custom emojis?
 
 node-emojis doesn't support custom emojis as it strictly follows Unicode standards. For custom emoji needs, consider:
+
 - Creating a wrapper module
 - Extending the emoji object
 - Using a custom emoji solution alongside node-emojis
@@ -154,6 +159,7 @@ const animals = require('node-emojis/animals')
 ### Is searching performant with large datasets?
 
 Yes! The search module is optimized with:
+
 - Indexed keywords for fast lookups
 - Relevance scoring
 - Memoization for repeated searches
@@ -162,6 +168,7 @@ Yes! The search module is optimized with:
 ### Does node-emojis cache data?
 
 The library uses several caching strategies:
+
 - Lazy loading for categories
 - Memoized search results
 - Frozen objects to prevent mutations
@@ -187,6 +194,7 @@ function EmojiButton() {
 ### Can I use it with Next.js/Nuxt/SvelteKit?
 
 Yes, node-emojis is SSR-friendly and works with:
+
 - Next.js (pages and app router)
 - Nuxt 3
 - SvelteKit
@@ -204,6 +212,7 @@ Yes, node-emojis is SSR-friendly and works with:
 ### Why do some emojis show as boxes/question marks?
 
 This is usually a font/terminal issue:
+
 1. Ensure your terminal supports Unicode
 2. Install fonts with emoji support
 3. Try a different terminal (e.g., Windows Terminal, iTerm2)
@@ -226,6 +235,7 @@ Check your tsconfig.json:
 ### Module not found errors
 
 Common solutions:
+
 1. Clear node_modules and reinstall: `rm -rf node_modules && npm install`
 2. Clear npm cache: `npm cache clean --force`
 3. Check Node.js version: `node --version`
@@ -271,4 +281,4 @@ If your question isn't answered here:
 
 ---
 
-*Last updated: July 2025 | Version: 1.0.0*
+Last updated: July 2025 | Version: 1.0.0

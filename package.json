@@ -21,7 +21,8 @@
     "lint:yaml": "yamllint .github/**/*.yml *.yml *.yaml --ignore=node_modules",
     "lint:fix": "npm run lint:ts:fix && npm run lint:md:fix",
     "test": "npm run cover",
-    "prepare": "husky"
+    "prepare": "husky",
+    "check-bypass": "node scripts/check-bypass.js"
   },
   "repository": "git+https://github.com/jesselpalmer/node-emojis.git",
   "engines": {
