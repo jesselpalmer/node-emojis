@@ -4,11 +4,11 @@ Welcome to the official wiki for **node-emojis** - a modern, tree-shakeable emoj
 
 ## 🚀 Quick Links
 
-- [Getting Started](./Getting-Started) - Installation and basic usage
-- [API Reference](./API-Reference) - Complete API documentation
-- [FAQ](./FAQ) - Frequently asked questions
-- [Recipes & Examples](./Recipes-and-Examples) - Common use cases and patterns
-- [Migration Guide](./Migration-Guide) - Upgrading from v0.x to v1.0
+- [Getting Started](./Getting-Started.md) - Installation and basic usage
+- [API Reference](./API-Reference.md) - Complete API documentation
+- [FAQ](./FAQ.md) - Frequently asked questions
+- [Recipes & Examples](./Recipes-and-Examples.md) - Common use cases and patterns
+- [Migration Guide](./Migration-Guide.md) - Upgrading from v0.x to v1.0
 
 ## 📦 What is node-emojis?
 

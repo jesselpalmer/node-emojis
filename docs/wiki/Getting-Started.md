@@ -101,7 +101,7 @@ console.log(people.wave)        // 👋
 ```javascript
 const emojis = require('node-emojis')
 
-console.log(`Build completed! ${emojis.checkmark_button}`)
+console.log(`Build completed! ${emojis.white_check_mark}`)
 console.log(`Warning ${emojis.warning}: Check your configuration`)
 console.log(`Error ${emojis.x}: Build failed`)
 ```
