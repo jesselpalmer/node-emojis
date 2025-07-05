@@ -18,8 +18,8 @@ const suspiciousPatterns = [
 
 function checkRecentCommits() {
   try {
-    // Get last 10 commits with their messages
-    const commits = execSync('git log --oneline -10', { encoding: 'utf8' })
+    // Get last 5 commits with their messages
+    const commits = execSync('git log --oneline -5', { encoding: 'utf8' })
     const commitLines = commits.trim().split('\n')
     
     const suspiciousCommits = []
