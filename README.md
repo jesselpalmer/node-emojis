@@ -177,7 +177,9 @@ See the [examples](./examples) directory for more usage examples:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please see our [Contributing Guide](./CONTRIBUTING.md) for details.
+
+We use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages.
 
 ## 📄 License
 
