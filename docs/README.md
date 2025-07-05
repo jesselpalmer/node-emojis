@@ -1,50 +1,35 @@
 # Documentation 📚
 
-Welcome to the node-emojis documentation! This directory contains comprehensive guides, examples, and reference materials.
+Welcome to the node-emojis documentation!
 
 ## 📖 Wiki Documentation
 
-The `wiki/` directory contains all our GitHub wiki pages:
+Our comprehensive documentation is maintained on the [GitHub Wiki](https://github.com/jesselpalmer/node-emojis/wiki), which includes:
 
-- **[Home](./wiki/Home.md)** - Welcome page and navigation
-- **[Getting Started](./wiki/Getting-Started.md)** - Installation and basic usage
-- **[API Reference](./wiki/API-Reference.md)** - Complete API documentation
-- **[FAQ](./wiki/FAQ.md)** - Frequently asked questions
-- **[Recipes & Examples](./wiki/Recipes-and-Examples.md)** - Practical examples and patterns
-- **[Migration Guide](./wiki/Migration-Guide.md)** - Upgrading from v0.x to v1.0
-- **[Advanced Usage](./wiki/Advanced-Usage.md)** - Performance optimization and advanced patterns
-- **[Contributing to Wiki](./wiki/Contributing-to-Wiki.md)** - Guidelines for contributing
+- **Getting Started** - Installation and basic usage
+- **API Reference** - Complete API documentation
+- **FAQ** - Frequently asked questions
+- **Recipes & Examples** - Practical examples and patterns
+- **Migration Guide** - Upgrading from v0.x to v1.0
+- **Advanced Usage** - Performance optimization and advanced patterns
 
 ## 🚀 Quick Start
 
-New to node-emojis? Start here:
+New to node-emojis? Visit our [GitHub Wiki](https://github.com/jesselpalmer/node-emojis/wiki) to get started!
 
-1. [Installation Guide](./wiki/Getting-Started.md#installation)
-2. [Basic Usage Examples](./wiki/Getting-Started.md#basic-usage)
-3. [Common Use Cases](./wiki/Getting-Started.md#common-use-cases)
+## 📱 Additional Resources
 
-## 🔍 Find What You Need
-
-- **Learning**: Start with [Getting Started](./wiki/Getting-Started.md)
-- **Reference**: Check [API Reference](./wiki/API-Reference.md)
-- **Problems**: See [FAQ](./wiki/FAQ.md) and [Troubleshooting](./wiki/FAQ.md#troubleshooting)
-- **Examples**: Browse [Recipes & Examples](./wiki/Recipes-and-Examples.md)
-- **Upgrading**: Follow [Migration Guide](./wiki/Migration-Guide.md)
-- **Advanced**: Explore [Advanced Usage](./wiki/Advanced-Usage.md)
+- **Examples**: See the [`examples/`](../examples/) directory for runnable code
+- **Tests**: Check [`test/`](../test/) directory for usage patterns
+- **Contributing**: See [`CONTRIBUTING.md`](../CONTRIBUTING.md) for contribution guidelines
 
 ## 🤝 Contributing
 
 Want to improve our documentation?
 
-- **Small fixes**: Edit files directly and submit a PR
-- **New content**: Follow our [Contributing Guidelines](./wiki/Contributing-to-Wiki.md)
+- **Documentation**: Edit the wiki directly on GitHub
+- **Code**: Follow our [Contributing Guidelines](../CONTRIBUTING.md)
 - **Suggestions**: [Open a discussion](https://github.com/jesselpalmer/node-emojis/discussions)
-
-## 📱 External Resources
-
-- **GitHub Wiki**: All these docs are also available on our [GitHub Wiki](https://github.com/jesselpalmer/node-emojis/wiki)
-- **Examples**: See the [`examples/`](../examples/) directory for runnable code
-- **Tests**: Check [`test/`](../test/) directory for usage patterns
 
 ---
 
