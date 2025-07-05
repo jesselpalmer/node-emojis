@@ -49,7 +49,7 @@ function checkRecentCommits() {
     return suspiciousCommits.length
   } catch (error) {
     console.error('Error checking commits:', error.message)
-    return 0
+    return 1
   }
 }
 

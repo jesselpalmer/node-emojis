@@ -103,7 +103,7 @@ node-emojis/
 
 - We use Mocha and Chai for testing
 - Tests are written in TypeScript
-- Aim for high test coverage (currently at 92%+, minimum threshold 85%)
+- Aim for high test coverage (minimum threshold: 85%)
 - Run tests before submitting PRs
 
 ### Code Style
