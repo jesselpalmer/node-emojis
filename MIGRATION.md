@@ -11,12 +11,14 @@ This comprehensive guide includes:
 - Troubleshooting common issues
 - New features in v1.0
 
-**Note:** Validator functions (isValidEmoji, sanitizeEmojiName, etc.) are now
-imported from the main module instead of a separate validators submodule.
+## Important Note
+
+> **Validator Import Change**: Validator functions (isValidEmoji, sanitizeEmojiName, etc.) are now
+> imported from the main module instead of a separate validators submodule.
 
 ## Quick Links
 
 - [Breaking Changes](docs/wiki/Migration-Guide.md#breaking-changes)
 - [Migration Examples](docs/wiki/Migration-Guide.md#migration-examples)
-- [New Features](docs/wiki/Migration-Guide.md#new-features-in-v10)
+- [New Features](docs/wiki/Migration-Guide.md#new-features-in-v1-0)
 - [Troubleshooting](docs/wiki/Migration-Guide.md#troubleshooting-migration)
