@@ -26,7 +26,7 @@ function checkRecentCommits() {
         /no-verify/i,
         /quick.*fix/i,
         /temp.*commit/i,
-        /wip/i
+        /\bwip\b/i
       ]
       
       const isSuspicious = suspiciousPatterns.some(pattern => pattern.test(message))
