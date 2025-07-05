@@ -73,6 +73,9 @@ console.log(emojis.fire)  // 🔥
 
 // Tree-shakeable imports
 const { search } = require('node-emojis/search')
+
+// Validator functions now from main export
+const { isValidEmoji, sanitizeEmojiName, isValidEmojiName } = require('node-emojis')
 ```
 
 ### 3. API Method Changes

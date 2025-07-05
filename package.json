@@ -22,7 +22,7 @@
     "lint:fix": "npm run lint:ts:fix && npm run lint:md:fix",
     "test": "npm run cover",
     "prepare": "husky",
-    "check-bypass": "node scripts/check-bypass.js"
+    "lint:check-bypass": "node scripts/check-bypass.js"
   },
   "repository": "git+https://github.com/jesselpalmer/node-emojis.git",
   "engines": {

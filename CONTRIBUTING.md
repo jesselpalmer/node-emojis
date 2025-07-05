@@ -97,7 +97,7 @@ node-emojis/
 - `npm run lint` - Run TypeScript, Markdown, and YAML linters
 - `npm run lint:fix` - Auto-fix linting issues where possible
 - `npm run clean` - Clean build outputs
-- `npm run check-bypass` - Check for commits that may have bypassed hooks
+- `npm run lint:check-bypass` - Check for commits that may have bypassed hooks
 
 ### Testing
 

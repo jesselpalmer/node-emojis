@@ -37,7 +37,7 @@ jobs:
       run: npm run lint
 
     - name: Check for bypassed commits
-      run: npm run check-bypass
+      run: npm run lint:check-bypass
 
     - name: Run tests with coverage
       run: npm run cover:ci

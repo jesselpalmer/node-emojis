@@ -6,6 +6,17 @@
 
 const { execSync } = require('child_process')
 
+// Patterns that might indicate bypassed hooks
+const suspiciousPatterns = [
+  /fix.*lint/i,
+  /fix.*test/i,
+  /bypass.*hook/i,
+  /no-verify/i,
+  /quick.*fix/i,
+  /temp.*commit/i,
+  /\bwip\b/i
+]
+
 function checkRecentCommits() {
   try {
     // Get last 10 commits with their messages
@@ -17,17 +28,6 @@ function checkRecentCommits() {
     commitLines.forEach(line => {
       const [hash, ...messageParts] = line.split(' ')
       const message = messageParts.join(' ')
-      
-      // Patterns that might indicate bypassed hooks
-      const suspiciousPatterns = [
-        /fix.*lint/i,
-        /fix.*test/i,
-        /bypass.*hook/i,
-        /no-verify/i,
-        /quick.*fix/i,
-        /temp.*commit/i,
-        /\bwip\b/i
-      ]
       
       const isSuspicious = suspiciousPatterns.some(pattern => pattern.test(message))
       
