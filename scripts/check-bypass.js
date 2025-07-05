@@ -9,7 +9,6 @@ const { execSync } = require('child_process')
 // Patterns that might indicate bypassed hooks
 const suspiciousPatterns = [
   /no-verify/i,
-  /--no-verify/i,
   /skip.*hook/i,
   /skip.*check/i,
   /temp.*commit/i,
