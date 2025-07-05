@@ -1,7 +1,7 @@
 {
   "name": "node-emojis",
   "version": "1.0.0",
-  "description": "Emojis that you can use in your application 😊",
+  "description": "Modern, tree-shakeable emoji library for Node.js with TypeScript, search, skin tones, and aliases 🎉",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -92,7 +92,16 @@
     "typescript",
     "skin-tone",
     "aliases",
-    "search"
+    "search",
+    "tree-shaking",
+    "es-modules",
+    "commonjs",
+    "emoji-search",
+    "emoji-picker",
+    "unicode-emojis",
+    "emoji-aliases",
+    "emoji-library",
+    "node-emoji"
   ],
   "author": "Jesse Palmer <jesselpalmer@gmail.com> (http://jesselpalmer.com/)",
   "license": "MIT",
