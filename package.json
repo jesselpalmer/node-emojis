@@ -12,7 +12,7 @@
     "prebuild": "npm run clean",
     "prepublishOnly": "npm run build && npm test",
     "cover": "cross-env TS_NODE_PROJECT=tsconfig.test.json nyc mocha",
-    "cover:ci": "cross-env TS_NODE_PROJECT=tsconfig.test.json TS_NODE_TRANSPILE_ONLY=true nyc mocha --config .mocharc.ci.json",
+    "cover:ci": "npm run cover",
     "lint": "npm run lint:ts && npm run lint:md && npm run lint:yaml",
     "lint:ts": "tsc --noEmit --project tsconfig.test.json",
     "lint:ts:fix": "echo 'TypeScript linting complete'",
@@ -25,7 +25,7 @@
   },
   "repository": "git+https://github.com/jesselpalmer/node-emojis.git",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=20.0.0"
   },
   "files": [
     "lib/"
