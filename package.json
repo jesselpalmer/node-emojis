@@ -11,7 +11,7 @@
     "clean": "rm -rf dist lib",
     "prebuild": "npm run clean",
     "prepublishOnly": "npm run build && npm test",
-    "cover": "nyc mocha",
+    "cover": "NODE_ENV=test nyc --require ts-node/register mocha --require ts-node/register test/*.ts",
     "lint": "npm run lint:ts && npm run lint:md && npm run lint:yaml",
     "lint:ts": "tsc --noEmit --project tsconfig.test.json",
     "lint:ts:fix": "echo 'TypeScript linting complete'",
