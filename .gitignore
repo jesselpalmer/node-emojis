@@ -63,6 +63,7 @@ typings/
 # TypeScript
 *.tsbuildinfo
 lib/
+test-dist/
 
 # IDE
 .vscode/
