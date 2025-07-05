@@ -1,8 +1,8 @@
 # Migration Guide
 
-📖 **For the complete migration guide, please see [docs/wiki/Migration-Guide.md](./docs/wiki/Migration-Guide.md)**
+📖 **For the complete migration guide, please see [docs/wiki/Migration-Guide.md](docs/wiki/Migration-Guide.md)**
 
-This comprehensive guide includes:
+The comprehensive migration guide includes:
 
 - Migrating from v0.x to v1.0
 - Migrating from other emoji libraries  
@@ -18,7 +18,7 @@ This comprehensive guide includes:
 
 ## Quick Links
 
-- [Breaking Changes](./docs/wiki/Migration-Guide.md#breaking-changes)
-- [Migration Examples](./docs/wiki/Migration-Guide.md#migration-examples)
-- [New Features](./docs/wiki/Migration-Guide.md#new-features-in-v10)
-- [Troubleshooting](./docs/wiki/Migration-Guide.md#troubleshooting-migration)
+- [Breaking Changes](docs/wiki/Migration-Guide.md#breaking-changes)
+- [Migration Examples](docs/wiki/Migration-Guide.md#migration-examples)
+- [New Features](docs/wiki/Migration-Guide.md#new-features-in-v1-0)
+- [Troubleshooting](docs/wiki/Migration-Guide.md#troubleshooting-migration)
