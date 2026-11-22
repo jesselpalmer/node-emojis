@@ -214,14 +214,22 @@ Remember: These hooks protect code quality and save time for everyone!
 
 Releases are published manually by maintainers. To release a new version:
 
-1. Ensure all tests pass and coverage meets thresholds
-2. Update version in package.json
-3. Update CHANGELOG.md with release notes
-4. Commit changes: `git commit -m "chore: release v1.0.0"`
-5. Create git tag: `git tag v1.0.0`
-6. Push changes and tag: `git push && git push --tags`
-7. Publish to npm: `npm publish`
-8. Create GitHub release with changelog notes
+1. Make sure CI is green on `main`, then work from a clean checkout:
+   `git checkout main && git pull && npm ci`
+2. Bump the version without tagging yet: `npm version patch --no-git-tag-version`
+   (use `minor` or `major` as semver requires)
+3. Move the `Unreleased` CHANGELOG entries under the new version and date
+4. Build and verify the exact artifact:
+   `npm run build && npm test && npm run test:package && npm pack --dry-run`
+   Check that the file list contains only `lib/`, `README.md`, `LICENSE`
+   and `package.json`
+5. Open a PR with the version bump and CHANGELOG, and merge it once CI passes
+6. From the merged `main`: `npm publish` (`prepublishOnly` rebuilds and
+   reruns the tests). Requires npm publish rights and 2FA
+7. Tag and push: `git tag vX.Y.Z && git push origin vX.Y.Z`
+8. Create a GitHub release from the tag with the CHANGELOG notes
+
+There is no automated publishing; releases are rare and manual on purpose.
 
 ## Questions?
 
