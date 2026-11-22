@@ -20,7 +20,7 @@ Steps to reproduce the behavior:
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
-### Code Example
+## Code Example
 
 ```javascript
 // Please provide a minimal code example that reproduces the issue
