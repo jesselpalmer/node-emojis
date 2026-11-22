@@ -69,7 +69,9 @@ describe('package root exports (issue #23)', () => {
       `import * as ns from ${JSON.stringify(entry)}`,
       'import { createRequire } from "module"',
       `const cjs = createRequire(import.meta.url)(${JSON.stringify(path.join(__dirname, '../lib/index.js'))})`,
-      'const names = Object.keys(ns).filter((n) => n !== "default" && n !== "__esModule")',
+      // Node 23+ also exposes the whole CommonJS object as 'module.exports'
+      'const special = ["default", "__esModule", "module.exports"]',
+      'const names = Object.keys(ns).filter((n) => !special.includes(n))',
       'const mismatched = names.filter((n) => ns[n] !== cjs[n])',
       'console.log(JSON.stringify({ names, mismatched, defaultOk: ns.default === cjs }))'
     ].join('\n')
