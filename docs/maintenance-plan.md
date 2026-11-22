@@ -137,6 +137,27 @@ Each was reproduced against the packed tarball installed into a clean project.
   site, or community growth work.
 - Raising the minimum Node version.
 
+## Progress (2026-11-22)
+
+- Done: #23 fixed with built-package regression tests and a packed-tarball
+  smoke test in CI (#25); lockfile security refresh superseding #20 to #22
+  (#26); CI on Node 20/22/24/26, dev tooling majors, Dependabot config,
+  Codecov removed (#27); documentation and release-process corrections.
+- Deferred, documented rather than fixed (low impact, would add
+  maintenance surface):
+  - TypeScript with `"type": "module"` and `moduleResolution: nodenext`
+    types the default import as the module namespace, so `emojis.fire`
+    fails type-checking although it works at runtime. Fixing it needs a
+    hand-maintained `.d.mts`.
+  - Published `.d.ts` files import JSON, which only matters to consumers
+    who turn off `skipLibCheck`.
+  - `getNameFromEmoji` returns the last alias registered for an emoji
+    (`snapstreak` for 🔥) rather than the primary name. Changing it alters
+    output, so it belongs in a minor release if at all.
+  - `actions/checkout` and `actions/setup-node` v4 run on the deprecated
+    Node 20 Actions runtime; the new Dependabot config will propose
+    upgrades.
+
 ## Remaining work and blockers
 
 - Publishing needs the maintainer's npm access and explicit approval.
