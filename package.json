@@ -138,5 +138,10 @@
     "statements": 85,
     "functions": 75,
     "branches": 60
+  },
+  "overrides": {
+    "glob": "^14.0.6",
+    "minimatch": "^11.0.9",
+    "katex": "^0.19.1"
   }
 }
