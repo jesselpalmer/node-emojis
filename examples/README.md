@@ -25,7 +25,7 @@ node examples/basic-usage.js
 
 ### modern-usage.js
 
-Demonstrates advanced v1.0.0 features for optimal performance and tree-shaking:
+Demonstrates advanced v1.0.0 features using subpath imports:
 
 - Tree-shakeable imports
 - Feature-based modules

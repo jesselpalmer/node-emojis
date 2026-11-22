@@ -1,6 +1,6 @@
 /**
  * @fileoverview Modern usage examples for node-emojis v1.0.0
- * @description Demonstrates tree-shaking, ES modules, and performance-optimized imports
+ * @description Demonstrates subpath imports and ES module usage
  */
 
 console.log('=== node-emojis v1.0.0 - Modern Usage ===\n')
@@ -13,13 +13,13 @@ console.log('Fire:', emojis.fire)         // 🔥
 console.log('Pizza:', emojis.pizza)       // 🍕
 console.log('Unicorn:', emojis.unicorn)   // 🦄
 
-// Method 2: Import only what you need (tree-shaking friendly)
+// Method 2: Import only the features you need
 const { search } = require('node-emojis/search')
 const { applySkinTone, supportsSkinTone } = require('node-emojis/skin-tones')
 const { getAliases, isSameEmoji } = require('node-emojis/aliases')
 const { filterByCategory, filterByVersion } = require('node-emojis/filters')
 
-console.log('\n2. Tree-shakeable imports:')
+console.log('\n2. Subpath imports:')
 
 // Search functionality
 console.log('\n2a. Search:')
@@ -63,12 +63,12 @@ console.log('Fire metadata:', metadata.fire)
 // ES Modules (when using a bundler)
 console.log('\n4. ES Module imports (for bundlers):')
 console.log(`
-// Tree-shakeable imports
+// Load individual features
 import { search } from 'node-emojis/search'
 import { applySkinTone } from 'node-emojis/skin-tones'
 import { getAliases } from 'node-emojis/aliases'
 import { filterByCategory } from 'node-emojis/filters'
 
-// Direct data import (smallest bundle)
-import { emojis, metadata } from 'node-emojis'
+// Everything from the package root
+import emojis, { search as rootSearch, getNameFromEmoji } from 'node-emojis'
 `)

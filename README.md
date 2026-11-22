@@ -7,12 +7,12 @@
 
 # node-emojis 🎉
 
-A modern, tree-shakeable emoji library for Node.js and browsers with TypeScript support.
+An emoji library for Node.js with TypeScript types, search, skin tones and aliases.
 
 ## ✨ Features
 
-- 🌳 **Tree-shakeable** - Import only what you need
-- 📦 **360+ emojis** from Unicode 1.0 to 15.0
+- 🌳 **Modular** - Subpath imports load only the feature you need
+- 📦 **230+ emojis** (369 names including aliases) from Unicode 1.0 to 15.0
 - 🔍 **Smart search** with keyword matching
 - 🎨 **Skin tone support** for 150+ human emojis
 - 🔄 **Emoji aliases** (thumbsup/+1/thumbs_up)
@@ -22,7 +22,7 @@ A modern, tree-shakeable emoji library for Node.js and browsers with TypeScript 
 
 ## 📋 Requirements
 
-- Node.js 20.0.0 or higher
+- Node.js 20.0.0 or higher (CI tests Node 20, 22, 24 and 26)
 - TypeScript 5.0+ (for TypeScript users)
 
 ## 📦 Installation
@@ -47,9 +47,12 @@ const { applySkinTone } = require('node-emojis/skin-tones')
 
 ```javascript
 import emojis from 'node-emojis'
-import { search } from 'node-emojis/search'
+import { search, getNameFromEmoji } from 'node-emojis'
 import { applySkinTone } from 'node-emojis/skin-tones'
 ```
+
+The package is published as CommonJS. Native ESM `import`, including named
+imports from the package root, works in Node.js and in bundlers.
 
 ## 📖 API
 
@@ -134,39 +137,38 @@ const hearts = filterByKeyword('heart')
 const { getNameFromEmoji, isValidEmoji, isValidEmojiName } = require('node-emojis')
 
 // Reverse lookup
-getNameFromEmoji('🔥')            // 'fire'
+getNameFromEmoji('🔥')            // a name for 🔥 ('fire' or one of its aliases)
 
 // Validation
 isValidEmoji('🔥')                // true
 isValidEmojiName('fire')          // true
 ```
 
-## 🌲 Tree Shaking
+## 🌲 Smaller Imports
 
-Import only what you need to minimize bundle size:
+Each feature has its own subpath, so you can load only what you need:
 
 ```javascript
-// ❌ Imports entire library
+// Loads the whole library, including the legacy emoji object
 import emojis from 'node-emojis'
 
-// ✅ Imports only search functionality
+// Loads only the search feature and its data
 import { search } from 'node-emojis/search'
 
-// ✅ Import multiple features
+// Import multiple features
 import { search } from 'node-emojis/search'
 import { applySkinTone } from 'node-emojis/skin-tones'
 import { getAliases } from 'node-emojis/aliases'
 ```
 
-## 📊 Bundle Size Comparison
+## 🟦 TypeScript
 
-| Import Style | Size (minified) |
-| ------------ | --------------- |
-| Full library | ~85KB |
-| Search only | ~15KB |
-| Skin tones only | ~8KB |
-| Aliases only | ~6KB |
-| Direct data import | ~60KB |
+Type definitions are included. Subpath imports such as `node-emojis/search`
+need `moduleResolution` set to `node16`, `nodenext` or `bundler`.
+
+The root `getByCategory` and `getAllNames` are the legacy v0.x methods. For
+the modern versions, import them from `node-emojis/search` and
+`node-emojis/aliases`.
 
 ## 📚 Documentation
 
@@ -184,7 +186,7 @@ For comprehensive documentation, examples, and guides:
 See the [examples](./examples) directory for more usage examples:
 
 - [Basic usage](./examples/basic-usage.js) - CommonJS examples
-- [Modern usage](./examples/modern-usage.js) - Tree-shaking examples
+- [Modern usage](./examples/modern-usage.js) - Subpath import examples
 
 ## 🤝 Contributing
 
