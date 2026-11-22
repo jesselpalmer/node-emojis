@@ -1,6 +1,6 @@
 {
   "name": "node-emojis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Emoji library for Node.js with TypeScript types, search, skin tones, and aliases 🎉",
   "main": "lib/index.js",
   "module": "lib/index.js",
