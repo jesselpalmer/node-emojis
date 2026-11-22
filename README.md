@@ -161,7 +161,7 @@ import { getAliases } from 'node-emojis/aliases'
 ## 📊 Bundle Size Comparison
 
 | Import Style | Size (minified) |
-|-------------|-----------------|
+| ------------ | --------------- |
 | Full library | ~85KB |
 | Search only | ~15KB |
 | Skin tones only | ~8KB |
