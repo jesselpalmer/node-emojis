@@ -21,6 +21,7 @@
     "lint:yaml": "yamllint .github/**/*.yml *.yml *.yaml --ignore=node_modules",
     "lint:fix": "npm run lint:ts:fix && npm run lint:md:fix",
     "test": "npm run cover",
+    "test:package": "node scripts/smoke-test.js",
     "prepare": "husky",
     "lint:check-bypass": "node scripts/check-bypass.js"
   },

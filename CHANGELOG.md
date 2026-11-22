@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+
+- Root named exports (`search`, `filterByCategory`, `getNameFromEmoji`,
+  `isValidEmoji` and others) were `undefined` with `require('node-emojis')`
+  and threw in native ESM `import { ... } from 'node-emojis'` (#23). Legacy
+  access such as `require('node-emojis').fire` and `Object.keys()` on the
+  default export are unchanged.
+
+### Added
+
+- `npm run test:package`: installs the packed tarball into CommonJS, ESM and
+  TypeScript projects and checks the documented imports. Runs in CI.
+
 ## [1.0.0] - 2025-07-05
 
 ### Added
