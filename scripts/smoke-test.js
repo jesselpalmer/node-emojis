@@ -19,7 +19,13 @@ const tsc = path.join(repoRoot, 'node_modules', 'typescript', 'bin', 'tsc')
 const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm'
 
 function run (cmd, args, cwd) {
-  return execFileSync(cmd, args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] })
+  return execFileSync(cmd, args, {
+    cwd,
+    encoding: 'utf8',
+    stdio: ['ignore', 'pipe', 'pipe'],
+    // npm.cmd can only be spawned through a shell on Windows
+    shell: process.platform === 'win32'
+  })
 }
 
 function write (dir, file, contents) {

@@ -1,6 +1,7 @@
 import { expect } from 'chai'
-import fs from 'fs'
+import { execFileSync } from 'child_process'
 import path from 'path'
+import { pathToFileURL } from 'url'
 import * as searchFeature from '../lib/features/search'
 import * as skinTonesFeature from '../lib/features/skin-tones'
 import * as aliasesFeature from '../lib/features/aliases'
@@ -58,21 +59,30 @@ describe('package root exports (issue #23)', () => {
     })
   })
 
-  it('lists every root export by name so native ESM can detect it', () => {
+  it('exposes every root export to native ESM named imports', () => {
     // Node's CommonJS export detection only sees explicitly named exports.
     // A feature export missing from the explicit list in src/index.ts would
     // work with require() but throw on `import { name } from 'node-emojis'`.
-    const compiled: string = fs.readFileSync(
-      path.join(__dirname, '../lib/index.js'),
-      'utf8'
-    )
+    // Import the built package in a real ESM context and compare.
+    const entry = pathToFileURL(path.join(__dirname, '../lib/index.js')).href
+    const script = [
+      `import * as ns from ${JSON.stringify(entry)}`,
+      'import { createRequire } from "module"',
+      `const cjs = createRequire(import.meta.url)(${JSON.stringify(path.join(__dirname, '../lib/index.js'))})`,
+      'const names = Object.keys(ns).filter((n) => n !== "default" && n !== "__esModule")',
+      'const mismatched = names.filter((n) => ns[n] !== cjs[n])',
+      'console.log(JSON.stringify({ names, mismatched, defaultOk: ns.default === cjs }))'
+    ].join('\n')
+    const output = execFileSync(process.execPath, ['--input-type=module', '-e', script], {
+      encoding: 'utf8'
+    })
+    const result = JSON.parse(output)
+
+    expect(result.defaultOk, 'ESM default import is the legacy object').to.equal(true)
+    expect(result.mismatched, 'ESM values differ from require()').to.deep.equal([])
     Object.values(featureModules).forEach((mod) => {
       Object.keys(mod).forEach((name) => {
-        expect(
-          compiled.includes(`exports.${name} =`) ||
-            compiled.includes(`Object.defineProperty(exports, "${name}"`),
-          `${name} is not explicitly exported from src/index.ts`
-        ).to.equal(true)
+        expect(result.names, `${name} is not an ESM named export`).to.include(name)
       })
     })
   })
