@@ -2,7 +2,7 @@
 [![npm downloads](https://img.shields.io/npm/dw/node-emojis.svg)](https://www.npmjs.com/package/node-emojis)
 [![CI](https://github.com/jesselpalmer/node-emojis/workflows/CI/badge.svg)](https://github.com/jesselpalmer/node-emojis/actions)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
-[![license](https://img.shields.io/npm/l/node-emojis.svg)](https://github.com/jesselpalmer/node-emojis/blob/master/LICENSE)
+[![license](https://img.shields.io/npm/l/node-emojis.svg)](https://github.com/jesselpalmer/node-emojis/blob/main/LICENSE)
 
 # node-emojis 🎉
 
