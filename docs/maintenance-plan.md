@@ -96,9 +96,9 @@ Each was reproduced against the packed tarball installed into a clean project.
 - Document the release steps in CONTRIBUTING.md (version bump, CHANGELOG,
   `npm pack` check, `npm publish`, tag).
 - Untrack `lib/index.js`.
-- Consider removing `scripts/check-bypass.js` and its CI step. It flags
-  commit messages containing words like "wip", adds no protection, and is
-  maintenance overhead. Only with your approval.
+- Remove `scripts/check-bypass.js` and its CI step. It flags commit
+  messages containing words like "wip", adds no protection, and is
+  maintenance overhead. (Done, with the maintainer's approval.)
 
 ## Breaking-change risks
 
@@ -163,5 +163,7 @@ Each was reproduced against the packed tarball installed into a clean project.
 - Publishing needs the maintainer's npm access and explicit approval.
 - Every PR is reviewed and merged by the maintainer.
 - Ideas deferred beyond this pass: a real ESM build, refreshing emoji data to
-  a newer Unicode version, and slimming the dev tooling (husky, commitlint,
-  yaml-lint).
+  a newer Unicode version.
+- Dev tooling was slimmed on 2026-11-23: husky, commitlint, yaml-lint and
+  the bypass check were removed. CI runs lint, tests and the package smoke
+  test, so the git hooks only duplicated it.

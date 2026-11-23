@@ -47,9 +47,7 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
    cd node-emojis
    ```
 
-2. Install dependencies. Development needs Node.js 22.12 or later (the
-   `.nvmrc` pins 24), because the commit hooks use commitlint 21. The
-   published package itself still supports Node.js 20.
+2. Install dependencies (Node.js 20 or later; the `.nvmrc` pins 24):
 
    ```bash
    npm install
@@ -96,10 +94,9 @@ node-emojis/
 
 - `npm run build` - Build the TypeScript files
 - `npm test` - Run all tests with coverage
-- `npm run lint` - Run TypeScript, Markdown, and YAML linters
+- `npm run lint` - Run the TypeScript and Markdown linters
 - `npm run lint:fix` - Auto-fix linting issues where possible
 - `npm run clean` - Clean build outputs
-- `npm run lint:check-bypass` - Check for commits that may have bypassed hooks
 
 ### Testing
 
@@ -186,31 +183,16 @@ Fixes #123
 4. Add tests for the new emoji
 5. Run `npm test` to ensure everything works
 
-### Pre-commit Hooks
+### Checks
 
-The project uses pre-commit hooks that run:
+There are no git hooks. Before opening a PR, run:
 
-- Linting checks (TypeScript, Markdown, YAML)
-- Complete test suite with coverage
+```bash
+npm run lint && npm test
+```
 
-**Important:** Pre-commit hooks should not be bypassed except in genuine emergencies.
-
-#### Hook Bypass Policy
-
-- ⚠️ **Avoid `git commit --no-verify`** - This skips important quality checks
-- 🛡️ **Fix issues instead** - Address linting errors and test failures properly
-- 🚨 **Emergency only** - Only bypass in critical situations (server down, urgent hotfix)
-- 📝 **Document why** - If you must bypass, document the reason in the commit message
-- 🔍 **CI detection** - Our CI will flag commits that may have bypassed hooks
-
-#### If Your Commit Fails Pre-commit Checks
-
-1. **Linting errors**: Run `npm run lint:fix` to auto-fix issues
-2. **Test failures**: Fix the code or update tests as appropriate
-3. **TypeScript errors**: Address type issues in your code
-4. **Need help**: Ask in discussions or create an issue
-
-Remember: These hooks protect code quality and save time for everyone!
+CI runs the same checks, plus the packed-package smoke test, on every
+supported Node.js version.
 
 ## Release Process
 
