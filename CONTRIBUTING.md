@@ -47,7 +47,9 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
    cd node-emojis
    ```
 
-2. Install dependencies:
+2. Install dependencies. Development needs Node.js 22.12 or later (the
+   `.nvmrc` pins 24), because the commit hooks use commitlint 21. The
+   published package itself still supports Node.js 20.
 
    ```bash
    npm install
