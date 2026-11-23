@@ -15,9 +15,6 @@ updates:
       # Node type majors can expose APIs missing on Node 20; bump by hand.
       - dependency-name: "@types/node"
         update-types: ["version-update:semver-major"]
-      # commitlint 20+ needs Node 22.12+, but contributors may use Node 20.
-      - dependency-name: "@commitlint/*"
-        update-types: ["version-update:semver-major"]
     open-pull-requests-limit: 5
     commit-message:
       prefix: build
