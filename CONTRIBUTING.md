@@ -222,12 +222,13 @@ Releases are published manually by maintainers. To release a new version:
    (use `minor` or `major` as semver requires)
 3. Move the `Unreleased` CHANGELOG entries under the new version and date
 4. Build and verify the exact artifact:
-   `npm run build && npm test && npm run test:package && npm pack --dry-run`
+   `npm test && npm run test:package && npm pack --dry-run` (`npm test`
+   builds `lib/` first)
    Check that the file list contains only `lib/`, `README.md`, `LICENSE`
    and `package.json`
 5. Open a PR with the version bump and CHANGELOG, and merge it once CI passes
-6. From the merged `main`: `npm publish` (`prepublishOnly` rebuilds and
-   reruns the tests). Requires npm publish rights and 2FA
+6. From the merged `main`: `npm publish` (`prepublishOnly` runs `npm test`,
+   which rebuilds and reruns the tests). Requires npm publish rights and 2FA
 7. Tag and push: `git tag vX.Y.Z && git push origin vX.Y.Z`
 8. Create a GitHub release from the tag with the CHANGELOG notes
 
